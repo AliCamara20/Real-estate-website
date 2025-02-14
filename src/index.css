@@ -2098,10 +2098,49 @@ footer{
 }
 .agents_container{
   margin: 2em auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll; 
+}
 
+.agents_container::-webkit-scrollbar{
+  height: 8px;
+  width: 100%;
+}
+
+.agents_container::-webkit-scrollbar-thumb{
+  border-radius: 1000px;
+  background-color: #cedaeb;
+
+}
+.agents_container::-webkit-scrollbar-button{
+  display: none;
+}
+
+.agents_container::-webkit-scrollbar-track{
+  background-color: rebeccapurple;
+  border-radius: 1000px;
+  display: none;
+
+}
+.agents_container::-webkit-scrollbar-corner{
+  display: none;
 }
 
 
+
+.agents_grid{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  flex: none;
+ 
+}
+.agents_grid + .agents_grid{
+  margin-left: 1em;
+}
 .agent_card{
   background-color: #fff;
   padding: 2em 0;
@@ -2219,11 +2258,7 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .agents_grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.3em;
-  }
+ 
 
   .amenities{
     row-gap: 2px;

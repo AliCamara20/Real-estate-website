@@ -17,6 +17,7 @@ const Agents = () => {
                 <h2 className="section_header">Meet Our Team</h2>
                 <p className="mission_info agents_section_info">Professional & Dedicated Team</p>
                 <Container />
+                
             </div>
             
         </section>
@@ -26,46 +27,21 @@ const Agents = () => {
 
 
 const Container = () => {
-    const totalSlides = 8;
-
-    const renderIndicator = (onClickHandler, isSelected, index) => {
-        if( index >= totalSlides) return null
-
-        return(
-            <span 
-                className= {isSelected ? 'crsl_ind active_ind': 'crsl_ind'}
-                key={index}
-                onClick={onClickHandler}
-            ></span>
-        )
-    }
+    
     return(
         <div className="agents_container">
-            <Carousel 
-                className="crsl"
-                autoPlay 
-                infiniteLoop 
-                interval={5000} 
-                transitionTime={3000} 
-                showStatus = {false}
-                showThumbs = {false}
-                showIndicators = {true}
-                renderIndicator={renderIndicator}
-            >
-                <div className="agents_grid" >
-                    <Agent name={'Adam Walcorn'} image={adam} />
-                    <Agent name={'Seema Gauranki'} image={seema} />
-                    <Agent name={'Grack Chappel'} image={grag} />
-                    <Agent name={'Nikita Rajaswi'} image={nikita} />
-                </div>
-                <div className="agents_grid">
-                    <Agent name={'James N. Green'} image={james} />
-                    <Agent name={'Jasmine Khatri'} image={jasmine} />
-                    <Agent name={'Rudra K. Mathan'} image={rudra} />
-                    <Agent name={'Niharika Muthurk'} image={niha} />
-                </div>    
-            </Carousel>
-            
+            <div className="agents_grid" >
+                <Agent name={'Adam Walcorn'} image={adam} />
+                <Agent name={'Seema Gauranki'} image={seema} />
+                <Agent name={'Grack Chappel'} image={grag} />
+                <Agent name={'Nikita Rajaswi'} image={nikita} />
+            </div>  
+            <div className="agents_grid">
+                <Agent name={'James N. Green'} image={james} />
+                <Agent name={'Jasmine Khatri'} image={jasmine} />
+                <Agent name={'Rudra K. Mathan'} image={rudra} />
+                <Agent name={'Niharika Muthurk'} image={niha} />
+            </div>     
         </div>
     )
     
@@ -85,8 +61,8 @@ const Agent = ({name, image}) => {
 }
 
 
-const Thumb = () => {
-   return <span className="crsl_thumb"></span>
+const Thumb = ({isSelected}) => {
+   return <span className={ isSelected ? 'crsl_ind active_ind' : 'crsl_ind'}></span>
 }
 
 export default Agents
