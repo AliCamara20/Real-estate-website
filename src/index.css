@@ -1989,11 +1989,10 @@ footer{
 }
 
 .post_title{
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin: 0;
   line-height: 1.5;
-  color: var(--primary-color);
 }
 
 
@@ -2265,6 +2264,28 @@ footer{
   opacity: 1;
   color: rgb(0, 0, 0);
   margin: 1em 0 0 0 ;
+}
+
+.selected_blog_sm_links .sm_links .sm_link_icon:hover{
+  fill: red;
+}
+
+.related_tags, .selected_blog_sm_links{
+  margin: 1.5em 0 0 0;
+}
+
+.related_tags h4, .selected_blog_sm_links h4{
+  margin: 0;
+}
+
+.related_tags > *, .selected_blog_sm_links > *{
+  margin: 1em 0 0 0;
+}
+
+.selected_blog_sm_links .sm_links{
+  
+  justify-content: flex-start;
+  
 }
 
 
