@@ -20,7 +20,7 @@ const Blogs = () =>{
                </div>
                <div className="blog_container__blog_sidebar row">
                   <BlogsContainer />
-                  <BlogsSidebar />
+                  
                </div>
                
             </div>

@@ -22,8 +22,7 @@ const Post = ({post}) => {
             <img src={post.blog_img} alt="" className="post_img" />
             <div className="post_desc">
                 <p className="post_title">{post.title}</p>
-                <p className="published_date posted_date">
-                    <img src={calendarIcon} alt="" className="calendar_icon" />
+                <p className=" posted_date">
                     <span className="post_date">{post.published_at}</span>
                 </p>
             </div>

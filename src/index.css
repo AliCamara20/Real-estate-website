@@ -1797,7 +1797,7 @@ footer{
 }
 
 .blogs{
-  background-color:#f1f8fd;
+  background-color:#c2d2e275;
 }
 
 .blog_header{
@@ -1824,15 +1824,18 @@ footer{
   font-size: .95rem;
   margin-top: .3em;
 }
-
-.blogs_container, .blogs_sidebar{
+ 
+.blogs_container, .blogs_sidebar, .selected_blog{
   margin: 1.5em 0;
 }
 
-.blog_card{
+
+.blog_card, .selected_blog{
   background-color: #fff;
   padding: .7em;
   border-radius: 10px;
+  font-family: var(--header-font);
+
 }
 
 .blog_card .blog_img{
@@ -1852,40 +1855,37 @@ footer{
   display: flex;
   justify-content: flex-start;
   column-gap: 2em;
-  font-family: var(--primary-font)
   
 }
 
-.published_date, .comments{
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-  font-size: 1rem;
-  opacity: .8;
-
+.published_date{
+  font-size: .8rem;
+  background-color: rgb(22, 83, 62);
+  display: inline-block;
+  padding: .3em 1em;
+  border-radius: 3px;
+  color: #fff;
 }
 
 .blog_title{
   margin: 0;
-  font-size: 2rem;
   text-transform: capitalize;
   line-height: 1;
 }
 
 .blog_detail{
-  font-family: var(--primary-font);
   opacity: .8;
   line-height: 1.5;
   
 }
 .continue_link{
-  font-family: 'Noto Serif', serif;
-  font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
   display: block;
   padding: 0 0 1em 0;
   color:#0666cc;
+  font-weight: 490;
+  cursor: pointer;
 }
 
 .search_box{
@@ -1970,10 +1970,6 @@ footer{
   content: '';
   position: absolute;
   width: 6px;
-  height: 6px;
-  background-color: #0666cc;
-  left: -20px;
-  border-radius: 50%;
 }
 
 .blog_post{
@@ -1982,6 +1978,7 @@ footer{
   align-items: flex-start;
   justify-self: flex-start;
   column-gap: 1em;
+  font-family: var(--header-font);
 }
 
 .post_img{
@@ -1995,23 +1992,19 @@ footer{
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   color: var(--primary-color);
 }
 
-.posted_date{
-  font-weight: 300;
-  font-family: var(--primary-font);
-}
+
 .tag{
-  font-family: var(--primary-font);
+  font-family: var(--header-font);
   font-weight: 400;
   opacity: .7;
   font-size: .96rem;
   display: inline-block;
   border: 1px solid #ddd;
-  padding: .7em 1.5em;
+  padding: .5em 1.5em;
   margin: .3em 0;
  
 }
@@ -2222,6 +2215,59 @@ footer{
 .crsl_ind + .crsl_ind{
   margin-left: 1em;
 }
+.selected_blog_section{
+  background-color: #e9f1fa;
+}
+
+.selected_blog_detail{
+  margin: 3em 0;
+}
+
+.selected_blog{
+  padding:  1.2em;
+}
+
+.selected_blog .selected_blog_img{
+  border-radius: 10px;
+}
+
+.blog_writer__blog_comments{
+  display: flex;
+  column-gap: 2em;
+  padding: 0 1em;
+}
+
+.blog_writer, .blog_comments, .selected_blog .blog_detail{
+  opacity: .7;
+}
+
+.selected_blog .blog_detail{
+  line-height: 1.7;
+  margin: 2em 0;
+}
+
+.quote{
+  background-color:  #f8f9fa;
+  padding: 3em;
+}
+
+.quote > *{
+  display: block;
+  font-style: italic;
+
+}
+.quote .quote__quote{
+  line-height: 1.9;
+}
+.quote .quote__author{
+  font-size: clamp(1rem, .875rem + 1vw, 1.2rem);
+  font-weight: 700;
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  margin: 1em 0 0 0 ;
+}
+
+
 @media  (min-width: 700px){
   .row{
     display: flex;
@@ -2243,14 +2289,14 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
+
+ 
   
   .footer_columns, .amenities, .property_review, .agents_grid{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
- .agents_grid{
-    
- }
+ 
   .amenities{
     row-gap: 2px;
   }
@@ -2323,17 +2369,16 @@ footer{
     width: 95%;
   }
 
-  .blogs_container{
-    width: 60%;
-  }
+   
 
   .blogs_sidebar{
     width: 37%;
   }
-
-  .blog_container__blog_sidebar{
-    align-items: flex-start;
+  .selected_blog{
+    width: 60%;
   }
+
+  
 
   .about_hero-img {
     width: 47%;
@@ -2341,6 +2386,14 @@ footer{
 
   .about_hero-text, .work_processes{
     width: 50%;
+  }
+  .blogs_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+  }
+  .blog_card + .blog_card{
+    margin: 0;
   }
  
 }

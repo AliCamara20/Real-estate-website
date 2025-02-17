@@ -27,6 +27,7 @@ const CustomCarousel = ({images}) => {
       
    return(
     <Carousel responsive={responsive} 
+      
         customButtonGroup={<ButtonGroup /> }
         removeArrowOnDeviceType={["tablet", "mobile", 'desktop']}
     >
