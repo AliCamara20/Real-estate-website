@@ -2,6 +2,8 @@ import photo1 from './assets/g1_p1.jpg'
 import MidSection from './MidSection'
 import CardHeader from './CardHeader'
 import PropertyLocation from './PropertyLocation'
+import leftArrow from './assets/left_btn_arrow.svg'
+import rightArrow from './assets/right_btn_arrow.svg'
 import { useState } from 'react'
 import {places as initialPlaces } from './Data'
 const Gallery = () => {
@@ -51,12 +53,12 @@ export const Card = ({children, cardImages}) => {
             <div className="stacked">
                 <img src={currentImage} alt="" className="card_img" />
                 <div className="btns row_section" >
-                    
                     <button className='btn left_btn' onClick={ () => setIndex( index => index  - 1) }>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>
+                        <img src={leftArrow} alt="" className="btn_arrow" />
                     </button>
                     <button className='btn right_btn' onClick={ () => setIndex( index => index  + 1) }>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                    <img src={rightArrow} alt="" className="btn_arrow" />
+
                     </button>
                     
                 </div>

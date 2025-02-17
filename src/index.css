@@ -207,7 +207,7 @@ header{
 .hero_img{
   width: 100%;
   object-fit: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero_text{
@@ -265,7 +265,7 @@ header{
   margin-top: 2em;
 }
  .gallery{
-  background: #add8e660;
+  background: #d2eff860;
 }
 
 .section_header, .section_detail{
@@ -304,9 +304,11 @@ header{
   
 }
 .card{
-  box-shadow: 0 5px 10px rgb(0, 0, 0, .3);
+  box-shadow: 0 5px 10px #a9d6e460;
   display: grid;
   border-radius: 6px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .card_img{
@@ -324,19 +326,21 @@ header{
 .btn{
   display: flex;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: none;
-  background-color: rgb(0, 0, 0, .2);
+  background-color: rgb(0, 0, 0, .5);
   cursor: pointer;
   outline: none;
   
 
 }
 
-.btn svg{
+.btn .btn_arrow{
   fill: #fff;
+  width: 40px;
+  height: 40px;
   
 }
 
@@ -2054,7 +2058,7 @@ footer{
   padding: 5em 0;
 }
 
-.mission_statement .section_header{
+.mission_statement .section_header, .agents .section_header{
   margin: 0;
 }
 .mission_info{
@@ -2099,34 +2103,18 @@ footer{
 .agents_container{
   margin: 2em auto;
   max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   overflow-x: scroll; 
+  box-sizing: border-box;
 }
 
 .agents_container::-webkit-scrollbar{
-  height: 8px;
-  width: 100%;
-}
-
-.agents_container::-webkit-scrollbar-thumb{
-  border-radius: 1000px;
-  background-color: #cedaeb;
-
-}
-.agents_container::-webkit-scrollbar-button{
   display: none;
 }
 
-.agents_container::-webkit-scrollbar-track{
-  background-color: rebeccapurple;
-  border-radius: 1000px;
-  display: none;
 
-}
-.agents_container::-webkit-scrollbar-corner{
-  display: none;
-}
 
 
 
@@ -2136,8 +2124,10 @@ footer{
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 1em;
   flex: none;
+  box-sizing: border-box;
  
 }
+
 .agents_grid + .agents_grid{
   margin-left: 1em;
 }
@@ -2258,8 +2248,9 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
- 
-
+ .agents_grid{
+    
+ }
   .amenities{
     row-gap: 2px;
   }

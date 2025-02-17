@@ -1,9 +1,9 @@
-import heroImage from './assets/r_hero.png'
+import heroVideo from './assets/family.mp4'
 
 const Hero = () => {
     return(
         <section className="hero">
-            <img src={heroImage} alt="" className="hero_img" />
+            <video src={heroVideo} autoPlay  = {true} className="hero_img" ></video>
             <div className="container hero_text">
                 
                     <h1 className="hero_title">
