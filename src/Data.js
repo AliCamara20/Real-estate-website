@@ -22,6 +22,7 @@ import blog_img2 from './assets/blog_img2.jpg'
 import blog_img3 from './assets/blog_img3.jpg'
 import blog_img4 from './assets/blog_img4.jpg'
 import blog_img5 from './assets/blog_img5.jpg'
+import blog_img6 from './assets/blog_img6.jpg'
 
 
 export const reviews = [
@@ -307,6 +308,16 @@ export const blogData = [
         published_at: 'Nov 21 2024', 
         comments: 7
     },
+
+    {
+        id: 5,
+        blog_img: blog_img6,
+        title: 'Why Resido is been popular all this years', 
+        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        published_at: 'Jan 12 2025', 
+        comments: 25
+    },
+       
        
 
 

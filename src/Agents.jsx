@@ -18,16 +18,7 @@ const Agents = () => {
                 <h2 className="section_header ">Meet Our Team</h2>
                 <p className="mission_info agents_section_info">Professional & Dedicated Team</p>
                 <Container />
-                <div className="thumbs" style={{width: 'fit-content', margin: '0 auto'}}>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                    <Thumb></Thumb>
-                </div>
+                
             </div>
             
         </section>
