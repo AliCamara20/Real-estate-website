@@ -1956,7 +1956,7 @@ footer{
   padding: 1em 1.3em;
 }
 .category_item{ 
-  font-family: var(--primary-font);
+  font-family: var(--header-font);
   font-weight: 370;
   font-size: .95rem;
   padding: 0;
@@ -2279,7 +2279,7 @@ footer{
 }
 
 .selected_blog_sm_links h4{
-  justify-self: center;
+  justify-self: flex-start;
 }
 
 .related_tags > *, .selected_blog_sm_links > *{
@@ -2558,10 +2558,10 @@ footer{
    
 
   .blogs_sidebar{
-    width: 37%;
+    width: 30%;
   }
   .selected_blog{
-    width: 60%;
+    width: 67%;
   }
 
   
@@ -2581,6 +2581,11 @@ footer{
   .blog_card + .blog_card{
     margin: 0;
   }
+
+  .selected_blog_sm_links h4{
+    justify-self: center;
+  }
+  
  
 }
 
