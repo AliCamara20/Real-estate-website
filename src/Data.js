@@ -334,3 +334,31 @@ export const tags  = ['Apartment', 'Confy', 'Couple', 'Family',
     'Flat', 'Food', 'Healthy', 'Love', 'Luxuary', 'Organic', 
     'Peace', 'Tasty'
 ]
+
+ export const faqs = [
+    {
+        type: 'general',
+        questions: ['How To Install Rikanda Theme',
+            'What is main Requirement For Rikanda', 
+            'Why Choose Rikanda Theme'
+        ]
+
+    },
+    {
+        type: 'payment',
+        questions: ['May I Request For Refund',
+            'May I Get Any Offer in Future', 
+            'How Much Time It will Take For Refund'
+        ]
+
+    },
+
+    {
+        type: 'upgrade',
+        questions: ['How To Upgrade Rikanda Theme',
+            'Rikada Available for WordPress Version', 
+            'Why We need to upgrade Rikada'
+        ]
+
+    }
+]

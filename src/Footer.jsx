@@ -2,6 +2,7 @@ import logo from './assets/resido_logo.svg';
 import play_storeIcon from './assets/play_store.svg'
 import app_storeIcon from './assets/app_store.svg'
 import SocialMediaLinks from './SocialMediaLinks';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -20,10 +21,10 @@ const Footer = () => {
                     
                         <Column >
                             <h5 className="footer_col_header">Navigations</h5>
-                            <p className="footer_pg"><a href="" className="footer_link">About Us</a></p>
-                            <p className="footer_pg"><a href="" className="footer_link">FAQS</a></p>
-                            <p className="footer_pg"><a href="" className="footer_link">Contacts</a></p>
-                            <p className="footer_pg"><a href="" className="footer_link">Blogs</a></p>
+                            <p className="footer_pg"><Link  to = '/about' className="footer_link">About Us</Link></p>
+                            <p className="footer_pg"><Link  to = '/faqs' className="footer_link">FAQS</Link></p>
+                            <p className="footer_pg"><Link  to = '/contact' className="footer_link">Contact</Link></p>
+                            <p className="footer_pg"><Link  to = '/blogs' className="footer_link">Blogs</Link></p>
                         </Column>
                     
                         <Column>

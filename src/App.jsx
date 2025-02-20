@@ -6,10 +6,9 @@ import Contact from "./Contact"
 import Blog from "./Blog"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Place from "./Place"
-import ErrorPage from "./ErrorPage"
-import CustomCarousel from "./Carousel"
 import PropertyList from "./PropertyList"
-import RatingStars from "./RatingStars"
+import ErrorPage from "./ErrorPage"
+import FaQS from "./FAQS"
 
 
 
@@ -29,6 +28,7 @@ function App() {
           <Route path="blogs" element = {<Blogs />} />
           <Route path="blogs/:blogId" element = {<Blog />} />
           <Route path="contact" element = {<Contact />} />
+          <Route path="faqs" element = {<FaQS />} />
           <Route path="*" element = {<ErrorPage />} />
         </Route>
         
