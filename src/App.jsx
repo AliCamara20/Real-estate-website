@@ -31,7 +31,6 @@ function App() {
           <Route path="faqs" element = {<FaQS />} />
           <Route path="*" element = {<ErrorPage />} />
         </Route>
-        
       </Routes>
     </BrowserRouter>
   )
