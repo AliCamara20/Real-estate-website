@@ -2475,7 +2475,7 @@ footer{
 }
 
 .faqs_hero{
-  background-image:image-set(url('./assets/medium2.jpg') 1x, url('./assets/medium2.jpg') 2x, url('./assets/large2_2.jpg')); 
+  background-image:image-set(url('./assets/medium2.jpg') 1x, url('./assets/medium2.jpg') 2x, url('./assets/large2_2.jpg') 3x); 
   height: 430px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2500,7 +2500,7 @@ footer{
 }
 
 .container_container{
-  background-color: rgb(0, 0, 0, .2); 
+  background-color: rgb(0, 0, 0, .5); 
   width: 100%;
   height: 100%;
   display: flex;
@@ -2517,7 +2517,7 @@ footer{
 
 .faqs_hero_text__header{
   text-align: center;
-  color:var(--faqs-primaryColor);
+  color:#fff;;
   font-size:clamp(1.2rem, 9vw, 3.9rem) ;
   margin: .5em 0;
   line-height: 1.1;
