@@ -2244,11 +2244,14 @@ footer{
 .selected_blog .blog_detail{
   line-height: 1.7;
   margin: 2em 0;
+  font-size: clamp(.88rem, 50vw, .99rem);
+  line-height: 1.9;
 }
 
 .quote{
   background-color:  #f8f9fa;
-  padding: 3em;
+  padding: 2em;
+  column-gap: 2em;
 }
 
 .quote > *{
@@ -2256,15 +2259,17 @@ footer{
   font-style: italic;
 
 }
-.quote .quote__quote{
-  line-height: 1.9;
+
+.quotation{
+  color: #022f88;
 }
 .quote .quote__author{
   font-size: clamp(1rem, .875rem + 1vw, 1.2rem);
   font-weight: 700;
   opacity: 1;
-  color: rgb(0, 0, 0);
+  color: #000;
   margin: 1em 0 0 0 ;
+  display: block;
 }
 
 .selected_blog_sm_links .sm_links .sm_link_icon:hover{
@@ -2365,9 +2370,18 @@ footer{
 }
 .selected_blog_comment{
   display: flex;
-  justify-content: flex-start;
-  column-gap: 2em;
+  justify-content: space-between;
   font-family: var(--header-font);
+  align-items: flex-start;
+}
+
+
+.selected_blog_comment > *:first-child{
+  width: 18%;
+  aspect-ratio: 1/1;
+}
+.selected_blog_comment > *:nth-child(2){
+  width: 78%;
 }
 .selected_blog_comment + .selected_blog_comment{
   margin-top: 2em;
@@ -2376,10 +2390,12 @@ footer{
 .blog_comment_header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .comment_name{
   margin: 0;
-  font-size:1rem;
+  font-size: clamp(.87rem, 2vw, 1.13rem);   
+  color: #333;
 }
 
 .selected_blog_comment .blog_comment_header .blog_detail{
@@ -2387,14 +2403,16 @@ footer{
   font-size: .9rem;
 }
 .selected_blog_commment_img{
-  max-width: 50px;
-  height: 50px;
+  width:  100%;
+  max-width: 100px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
+  align-self: flex-start;
 }
 
 .bookmark_icon{
-  margin-left: .7em;
+  margin-left: .5em;
   color: #ddd;
 }
 
@@ -2458,7 +2476,7 @@ footer{
 
 .faqs_hero{
   background-image: url('./assets/river_side.jpg');
-  height: 470px;
+  height: 430px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2472,6 +2490,8 @@ footer{
 
 .faqs{
   background-color: var(--faqs-primaryColor);
+  padding: 1em 0;
+  
 }
 .faqs_hero_img{
   width: 100%;
@@ -2498,8 +2518,9 @@ footer{
 .faqs_hero_text__header{
   text-align: center;
   color: #fff;
-  font-size: 3rem;
+  font-size:clamp(1.2rem, 7vw, 3.9rem ) ;
   margin: .5em 0;
+  line-height: 1.1;
 }
 
 .faqs_hero_form{
@@ -2508,7 +2529,7 @@ footer{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1.2em 1em;
+  padding: 1.1em 1em;
   background-color: #fff;
   border-radius: 4px;
   margin: auto;
@@ -2586,7 +2607,10 @@ footer{
 }
 .faqs_section{
   width: 90%;
+
 }
+
+
 .faq_panel{
   background-color: #fff;
   padding:  1.5em 1em;
@@ -2596,7 +2620,7 @@ footer{
 }
 .faq_panel_question{
   color: var(--primary-color);
-  font-size: .9rem;
+  font-size: .97rem;
   font-weight: 600;
   cursor: pointer;
   margin: 0;
@@ -2604,9 +2628,9 @@ footer{
 
 .faq_panel_answer{
   margin: 2em 0 0 0;
-  line-height: 1.5;
+  line-height: 1.7  ;
   color: #111;
-  font-size: .97rem;
+  font-size: .96rem;
 }
 
 .faq_btns{

@@ -5,7 +5,7 @@ const FAQsPanels = ({faq}) => {
     const [isExpanded, setIsExpanded] = useState(defaultExpandable);
     return(
         <div className="faq_panels">
-        {faq.questions.map( quest => {
+        {faq.questions.map( quest=> {
             return(
                 <FAQPanel 
                 key={quest} 

@@ -60,15 +60,18 @@ const Blog = ()=> {
                                 consectetur cupiditate! Unde, labore placeat! Itaque 
                                 repellendus quasi iste impedit id.
                             </p>
-                            <p className="blog_detail quote">
+                            <p className="blog_detail quote row">
+                                <FontAwesomeIcon icon="fa-solid fa-quote-left" size="2xl" className="quotation" />
                                 <span className="quote__quote">
                                     Lorem ipsum dolor sit amet, consectetur 
                                     adipisicing elit, sed do eiusmod tem ut 
                                     labore et dolore magna aliqua. Ut enim ad 
                                     minim veniam, quis nostrud ullamco laboris nisi 
                                     ut aliquip ex ea commodo onsequat.
+
+                                    <span className="quote__author">- Rosaline Pong</span>
+
                                 </span>
-                                <span className="quote__author">- Rosaline Pong</span>
                             </p>
                             <div className="related_tags__sm_links_row row">
                                 <div className="related_tags">

@@ -33,7 +33,7 @@ const FaQS = () => {
             <div className="container">
             <div className="faqs_section">
                 <FAQsButtons faqs={faqs} onSelect={ faq => setSelectedFaqsType(faq)}  />
-                <FAQsPanels faq={selectedFaqs}   />
+                <FAQsPanels faq={selectedFaqs} key={selectedFaqs.type}   />
             </div>
             </div>
             
