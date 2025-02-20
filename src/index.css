@@ -2518,7 +2518,7 @@ footer{
 .faqs_hero_text__header{
   text-align: center;
   color: #fff;
-  font-size:clamp(1.2rem, 7vw, 3.9rem ) ;
+  font-size:clamp(1.2rem, 9vw, 3.9rem) ;
   margin: .5em 0;
   line-height: 1.1;
 }
@@ -2586,7 +2586,7 @@ footer{
 
 .faqs_col_header{
   color: #000;
-  font-size: 1.1rem;
+  font-size:  1.1rem;
 }
 .faqs_col_header, .faqs_col_detail{
   margin: .3em 0;
@@ -2620,7 +2620,7 @@ footer{
 }
 .faq_panel_question{
   color: var(--primary-color);
-  font-size: .97rem;
+  font-size:clamp(.75rem, 4vw,.97rem ) ;
   font-weight: 600;
   cursor: pointer;
   margin: 0;
@@ -2658,6 +2658,7 @@ footer{
 .a_faq_btn{
   background-color: dodgerblue;
 }
+
 @media  (min-width: 700px){
   .row{
     display: flex;
@@ -2665,8 +2666,7 @@ footer{
     align-items: center;
   }
 
-  .container{
-  }
+  
   .input_field + .input_field, .search_btn{
     margin-top: 0;
     margin-left: 2em;
