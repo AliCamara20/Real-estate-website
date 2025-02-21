@@ -8,7 +8,7 @@ const Contact = () =>{
       <div className="prop_list_header">
         <div className="container">
           <div className="header_info">
-            <p className="header_info_title">Contact</p>
+            <h1 className="header_info_title">Contact</h1>
             <p className="header_info_desc">Get in Touch</p>
           </div>
         </div>

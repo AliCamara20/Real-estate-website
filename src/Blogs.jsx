@@ -7,7 +7,8 @@ const Blogs = () =>{
          <div className="prop_list_header blog_header">
             <div className="container">
                <div className="header_info">
-                  <p className="header_info_title">Our Articles</p>
+                  <h1 className="header_info_title">Our Articles</h1>
+                  <p className="header_info_desc">See Our Latest Articles & News</p>
                </div>
             </div>
          </div>

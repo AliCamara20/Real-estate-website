@@ -8,7 +8,7 @@ const About = () =>{
             <div className="prop_list_header">
                 <div className="container">
                 <div className="header_info">
-                    <p className="header_info_title">About Us</p>
+                    <h1 className="header_info_title">About Us</h1>
                     <p className="header_info_desc">Who we are & our mission</p>
                 </div>
                 </div>

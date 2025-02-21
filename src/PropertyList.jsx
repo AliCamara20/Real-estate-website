@@ -15,7 +15,7 @@ const PropertyList = () => {
             <div className="prop_list_header">
                 <div className="container">
                     <div className="header_info">
-                        <p className="header_info_title">Property List</p>
+                        <h1 className="header_info_title">Property List</h1>
                         <p className="header_info_desc">Property List in {locationName}</p>
                     </div>
                 </div>

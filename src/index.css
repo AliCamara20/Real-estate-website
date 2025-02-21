@@ -1489,16 +1489,20 @@ footer{
   margin-top: 5em;
 }
 .prop_list_header{
-  padding: 2em 0;
+  padding: 4em 0;
   background-color: #0d3483;  
   color: #fff;
+
 }
 
 .header_info_title{
   color: #fff;
-  font-size:  clamp(2rem, .875rem + 1vw, 3.7rem);
-  font-weight: 900;
   margin: 0;
+  font-size:  1rem;
+
+
+
+
 }
 
 .header_info_desc{
@@ -1507,6 +1511,7 @@ footer{
   font-style: italic;
   color: #ddd;
   font-weight: 300;
+  margin:  0;
 
 }
 
