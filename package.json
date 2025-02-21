@@ -1,5 +1,4 @@
 {
-  "homepage": "https://alicamara20.github.io/Real-estate-website/",
   "name": "react_estate-website",
   "private": true,
   "version": "0.0.0",
@@ -37,6 +36,7 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
+    "vercel": "^41.1.4",
     "vite": "^6.0.5"
   }
 }
