@@ -11,7 +11,7 @@ const Gallery = () => {
 
     const place = places.map( place =>{
         return(
-            <Card cardImages={place.gallery} >
+            <Card cardImages={place.gallery} key={place.id} >
                 <CardHeader  name={place.name} price={place.price}/>
                 <MidSection numOfBeds={place.info.numOfBeds} 
                     numOfBath={place.info.numOfBaths}

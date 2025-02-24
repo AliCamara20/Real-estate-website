@@ -35,13 +35,21 @@ const PropertyList = () => {
                        <div className="cards">
                             <Card  cardImages={places[0].gallery}>
                                 <CardHeader  name={'Resort Valley ocs'} price={'$7,000'}/>
-                                <MidSection numOfBeds={'4 Beds'} numOfBath={'3 Baths'}/>
+                                <MidSection 
+                                    numOfBeds={places[0].info.numOfBeds} 
+                                    numOfBath={places[0].info.numOfBaths}
+                                    sqft={places[0].info.sqft}
+                                />
                                 <hr />
                                 <PropertyLocation placeId={0}/>
                             </Card >
                             <Card cardImages={places[1].gallery}>
                                 <CardHeader  name={'Bluewhale Real Estate'} price={'$5,000'}/>
-                                <MidSection numOfBeds={'3 Beds'} numOfBath={'2 Baths'}/>
+                                <MidSection 
+                                    numOfBeds={places[1].info.numOfBeds} 
+                                    numOfBath={places[1].info.numOfBaths}
+                                    sqft={places[1].info.sqft}
+                                />
                                 <hr />
                                 <PropertyLocation placeId={1} />
                             </Card>

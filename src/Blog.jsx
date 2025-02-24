@@ -18,7 +18,7 @@ const Blog = ()=> {
             <div className="prop_list_header">
                 <div className="container">
                 <div className="header_info">
-                    <p className="header_info_title">Blog Detail</p>
+                    <h1 className="header_info_title">Blog Detail</h1>
                     <p className="header_info_desc">See Our Latest news</p>
                 </div>
                 </div>

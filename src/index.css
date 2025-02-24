@@ -38,6 +38,14 @@ button, input, a{
   max-width: 90%;
   margin: 0 auto;
 }
+#map{
+  width: 100%;
+  height: 300px;
+}
+.leaflet-container{
+  height:100% !important;
+  width: 100% !important;
+}
 
 img{
   max-inline-size: 100%;
@@ -1996,10 +2004,11 @@ footer{
 }
 
 .post_title{
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3vw, 1.1rem);
   font-weight: 700;
   margin: 0;
   line-height: 1.5;
+  color: #222;
 }
 
 
@@ -2238,12 +2247,21 @@ footer{
 
 .blog_writer__blog_comments{
   display: flex;
-  column-gap: 2em;
+  justify-content: space-between;
   padding: 0 1em;
+  width: 100%;
+  max-width: 260px;
 }
 
+.blog_title{
+  font-size: clamp(1.2rem, 5vw, 1.7rem);  
+  color: #222;
+}
 .blog_writer, .blog_comments, .selected_blog .blog_detail{
   opacity: .7;
+  font-size: clamp(.88rem, 50vw, .99rem);
+
+  
 }
 
 .selected_blog .blog_detail{
