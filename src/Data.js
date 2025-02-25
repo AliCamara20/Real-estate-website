@@ -23,6 +23,9 @@ import blog_img3 from './assets/blog_img3.jpg'
 import blog_img4 from './assets/blog_img4.jpg'
 import blog_img5 from './assets/blog_img5.jpg'
 import blog_img6 from './assets/blog_img6.jpg'
+import blog_img7 from './assets/blog_img7.jpg'
+import blog_img8 from './assets/blog_img8.jpg'
+
 
 
 export const reviews = [
@@ -269,7 +272,7 @@ export const places = [
 export const blogData = [
     {
         id: 0,
-        blog_img: blog_img1,
+        blog_img: blog_img7,
         title: 'What are people saying about Resido properties', 
         detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
         published_at: 'March 19 2023', 
@@ -278,7 +281,7 @@ export const blogData = [
        
     {
         id: 1,
-        blog_img: blog_img2,
+        blog_img: blog_img8,
         title: 'List of benifits and impressive listeo services', 
         detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
         published_at: 'May 29 2023', 
@@ -362,3 +365,17 @@ export const tags  = ['Apartment', 'Confy', 'Couple', 'Family',
 
     }
 ]
+
+export const typeOfProperty = ['Any Type', 'Appartment', 'Villas',
+    'Commercials',, 'Offices', 'Garage'
+]
+
+export const propertyLocations = ['New York City', 'Chicago, Illinois',
+    'Las Vegas', 'Comercial', 'New Orleans', 'Washington'
+]
+
+export const filterItems = ( items, query) => {
+    return items.filter( item => item.split(" ")
+        .some( word => word.startsWith(query))
+    )
+}

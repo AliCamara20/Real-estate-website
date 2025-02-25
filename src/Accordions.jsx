@@ -1,7 +1,7 @@
 import Accordion from "./Accordion"
 import playBtn from './assets/playcircle__icon.svg'
 import stackedImg from './assets/play-icon.jpg'
-import Map from "./Map"
+import LocationMap from "./Map"
 import Stars from "./Stars"
 import ReviewForm from "./ReviewForm"
 import RatingStars from "./RatingStars"
@@ -94,7 +94,7 @@ const Accordions = ({place, handleSubmitForm, name, email, message, onNameChange
                  </ul>
             </Accordion>
             <Accordion header_name={'Location'}>
-                <Map />
+                <LocationMap />
             </Accordion>
             <Accordion header_name={'Gallery'}>
                 <div className="prop_gallery cards">

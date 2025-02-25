@@ -9,6 +9,7 @@ import Place from "./Place"
 import PropertyList from "./PropertyList"
 import ErrorPage from "./ErrorPage"
 import FaQS from "./FAQS"
+import LocationMap from "./Map"
 
 
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
 
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Layout />}>
@@ -33,6 +35,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
   )
     
 
