@@ -365,3 +365,17 @@ export const tags  = ['Apartment', 'Confy', 'Couple', 'Family',
 
     }
 ]
+
+export const typeOfProperty = ['Any Type', 'Appartment', 'Villas',
+    'Commercials',, 'Offices', 'Garage'
+]
+
+export const propertyLocations = ['New York City', 'Chicago, Illinois',
+    'Las Vegas', 'Comercial', 'New Orleans', 'Washington'
+]
+
+export const filterItems = ( items, query) => {
+    return items.filter( item => item.split(" ")
+        .some( word => word.startsWith(query))
+    )
+}
