@@ -375,7 +375,7 @@ export const propertyLocations = ['New York City', 'Chicago, Illinois',
 ]
 
 export const filterItems = ( items, query) => {
-    return items.filter( item => item.split(" ")
-        .some( word => word.startsWith(query))
+    query = query.toLowerCase();
+    return items.filter( item => item.toLowerCase().includes(query)
     )
 }

@@ -258,7 +258,11 @@ header{
 .input_field + .input_field, .col + .col, .procedural_card + .procedural_card{
   margin-top: 2em;
 }
+.dropdown{
+  position: relative;
 
+
+}
 .dropdown_inputFields{
   flex-grow: 1;
   column-gap: 10px;
@@ -272,7 +276,6 @@ header{
   border-radius: 7px;
   display: flex;
   column-gap: 10px;
-  position: relative;
 }
 .dropdown_inputField .form_icon{
   color: #2244a1;
@@ -304,14 +307,13 @@ header{
 
 .dropdown_content{
   position: absolute;
-  bottom:-2.5em;
+  top: 100%;
   background-color: #fff;
   display: block;
   box-shadow: 0 5px 10px 0 rgb(0, 0, 0, .5);
   padding: .5em;
   z-index: 900;
   min-width: 180px;
-  display: none;
 
 }
 
