@@ -10,10 +10,10 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange}) => {
                 <input type="text" className="dropdown_input"
                     value={query} 
                     onClick={ () => setIsVisible(!isVisible)}
-                    onChange={onHandleChange}
+                    onChange={ e => onHandleChange(e)}
                 />   
             </div>
-            { isVisible && <div className="dropdown_content">{ isVisible && dropdownContents}</div>}
+            { isVisible && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}
         </div>
     )
 }

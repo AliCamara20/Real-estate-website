@@ -34,8 +34,8 @@ button, input, a{
   padding: 4em 0;
 }
 .container{
-  width: 1100px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1110px;
   margin: 0 auto;
 }
 #map{
@@ -209,7 +209,7 @@ header{
   width: 100%;
 }
 .hero{
-  background-image: image-set(url('./assets/real_estateM.jpg') 1x, url('./assets//real_estateL.jpg'));
+  background-image: image-set(url('./assets/real_estate2m.jpg') 1x, url('./assets//real_estate2l.jpg') 2x );
   height: 120vh;
   display: flex;
   justify-content: center;
@@ -228,7 +228,7 @@ header{
   width: 100%;
 }
 .hero_text{
-  background-color: rgb(0, 0, 0, .2);
+  background-color: rgb(0, 0, 0, .6);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -245,8 +245,9 @@ header{
 
 .hero_title{
   text-align: center;
-  font-size:clamp(2rem, 5vw, 4rem)  ;
+  font-size:clamp(2rem, 5vw, 4rem);
   color: #fff;
+  margin: 0;
 }
 
 .input_field{
@@ -257,10 +258,14 @@ header{
 .input_field + .input_field, .col + .col, .procedural_card + .procedural_card{
   margin-top: 2em;
 }
+.dropdown{
+  position: relative;
 
+
+}
 .dropdown_inputFields{
-  flex-grow: 1;
   column-gap: 10px;
+  flex-grow: 1;
   
 }
 .dropdown_inputField{
@@ -270,8 +275,12 @@ header{
   padding: .9em;
   border-radius: 7px;
   display: flex;
-  column-gap: 10px;
+  column-gap: 10px; 
+  align-items: center;
+  flex: 1;
   position: relative;
+  
+
 }
 .dropdown_inputField .form_icon{
   color: #2244a1;
@@ -281,36 +290,46 @@ header{
   
 }
 .dropdown_inputField .dropdown_input{
-  flex-grow: 1;
-  padding: 0 1em;
+  padding: .2em 1em;
   font-size: 1rem;
   font-family: var(--header-font);
   border: none;
   background-color: transparent;
+  width: 100%;
+  position: relative;
 }
+
+.dropdown_input:focus{
+  border: 1px solid #2244a1;
+  border-radius: 5px;
+}
+
+
 
 .hero_search_btn{
   width: 100%;
-  padding: 1.1em .7em;
+  padding: 1.1em 3em;
   font-size: 1rem;
   font-family: var(--header-font);
   border: none;
   border-radius: 4px;
-  background-color: #2244a1;;
+  background-color: #2244a1;
   color: #fff;
+  width: 100%;
+  cursor: pointer;
+
   
 }
 
 .dropdown_content{
   position: absolute;
-  bottom:-2.5em;
+  top: 100%;
   background-color: #fff;
   display: block;
   box-shadow: 0 5px 10px 0 rgb(0, 0, 0, .5);
   padding: .5em;
   z-index: 900;
   min-width: 180px;
-  display: none;
 
 }
 
@@ -324,7 +343,7 @@ header{
   background-color: #ddd;
 }
 .gallery{
-  background: #d2eff860;
+  background: rgb(248, 249, 250);
 }
 
 .section_header, .section_detail{
@@ -2142,8 +2161,8 @@ footer{
   margin-top: 2em;
 }
 .work_process__img{
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   object-fit: cover;
 }
 .work_process__desc-header{
@@ -2159,12 +2178,12 @@ footer{
 }
 .agents_container{
   margin: 2em auto;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   display: flex;
   flex-direction: row;
   overflow-x: scroll; 
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .agents_container::-webkit-scrollbar{
@@ -2172,16 +2191,13 @@ footer{
 }
 
 
-
-
-
 .agents_grid{
-  width: 1100px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 1em;
+  border: 1px solid red;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   flex: none;
-  box-sizing: border-box;
  
 }
 
@@ -2195,8 +2211,9 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.2em 0;
+  margin: 1.2em 0;  
   filter: drop-shadow(0 0 5px #d8d8f5);
+  width: 100%;
 }
 
 .agent_img{
@@ -2863,6 +2880,21 @@ footer{
 
   .selected_blog_sm_links h4{
     justify-self: center;
+  }
+
+  .hero_search_btn{
+    width: fit-content;
+  }
+
+   .dropdown_inputFields .dropdown_inputField{
+    border: 0;
+    border-radius: 0;
+    border-right: 1px solid hsl(223, 39%, 91%);
+  }
+
+  .dropdown:last-child .dropdown_inputField{
+    border-right: 0;
+  
   }
   
  

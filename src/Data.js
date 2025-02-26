@@ -25,6 +25,7 @@ import blog_img5 from './assets/blog_img5.jpg'
 import blog_img6 from './assets/blog_img6.jpg'
 import blog_img7 from './assets/blog_img7.jpg'
 import blog_img8 from './assets/blog_img8.jpg'
+import blog_img9 from './assets/blog_img9.jpg'
 
 
 
@@ -297,7 +298,7 @@ export const blogData = [
     },
     {
         id: 3,
-        blog_img: blog_img4,
+        blog_img: blog_img9,
         title: 'The Services Resido Provides Will Impress', 
         detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
         published_at: 'March 19 2024', 
@@ -375,7 +376,7 @@ export const propertyLocations = ['New York City', 'Chicago, Illinois',
 ]
 
 export const filterItems = ( items, query) => {
-    return items.filter( item => item.split(" ")
-        .some( word => word.startsWith(query))
+    query = query.toLowerCase();
+    return items.filter( item => item.toLowerCase().includes(query)
     )
 }

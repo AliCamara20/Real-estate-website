@@ -10,14 +10,32 @@ import niha from './assets/niharika_muthurk.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
-import React from "react"
+import React, { forwardRef, useRef, useLayoutEffect } from "react"
 const Agents = () => {
+    const containerRef = useRef(null);
+    const intervalRef = useRef(null);
+
+    useLayoutEffect(() => {
+       
+        intervalRef.current =  setInterval(() => {
+            containerRef.current.scrollLeft  = (containerRef.current.scrollLeft + (containerRef.current.scrollWidth / 2)) % (containerRef.current.scrollWidth)
+            //setActiveIndex( index =>  (index + 1) % 4);  
+
+                 
+        }, 4000)
+
+            
+
+
+        return () => clearInterval(intervalRef.current);
+
+     }, [])
     return(
         <section className="section agents">
             <div className="container">
                 <h2 className="section_header ">Meet Our Team</h2>
                 <p className="mission_info agents_section_info">Professional & Dedicated Team</p>
-                <Container />
+                <Container  ref={containerRef}/>
                 
             </div>
             
@@ -27,30 +45,34 @@ const Agents = () => {
 }
 
 
-const Container = () => {
+const Container = forwardRef(
+    (props, ref) => {
     
-    return(
-            <div className="agents_container"> 
-                <div className="agents_grid">
-                <Agent name={'Adam Walcorn'} image={adam} />
-                <Agent name={'Seema Gauranki'} image={seema} />
-                <Agent name={'Grack Chappel'} image={grag} />
-                <Agent name={'Nikita Rajaswi'} image={nikita} />
+        return(
+                <div className="agents_container" ref={ref} {...props}> 
+                    <div className="agents_grid">
+                    <Agent name={'Adam Walcorn'} image={adam} />
+                    <Agent name={'Seema Gauranki'} image={seema} />
+                    <Agent name={'Grack Chappel'} image={grag} />
+                    <Agent name={'Nikita Rajaswi'} image={nikita} />
+                    </div>
+                    <div className="agents_grid">
+                        <Agent name={'James N. Green'} image={james} />
+                        <Agent name={'Jasmine Khatri'} image={jasmine} />
+                        <Agent name={'Rudra K. Mathan'} image={rudra} />
+                        <Agent name={'Niharika Muthurk'} image={niha} />
+                    </div>
+                    
+                   
                 </div>
-                <div className="agents_grid">
-                    <Agent name={'James N. Green'} image={james} />
-                    <Agent name={'Jasmine Khatri'} image={jasmine} />
-                    <Agent name={'Rudra K. Mathan'} image={rudra} />
-                    <Agent name={'Niharika Muthurk'} image={niha} />
-                </div>
-                
-               
-            </div>
+    
+            
+        )
+    }
+) 
 
-        
-    )
     
-}
+
 
 const Agent = ({name, image}) => {
     
