@@ -32,32 +32,28 @@ const Hero = () => {
                    
 
                     
-                    <form action="" className="hero_form row">
+                    <form action="" className="hero_form row" onSubmit={e => e.preventDefault()}>
+                        <div className="dropdown_inputFields row">
                             <div className="dropdown_inputField">
                                 <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="xl" className="form_icon" />
                                 <input type="text" className="dropdown_input"  value={queries.propertyQuery} onChange={e => setQueries({...queries, propertyQuery: e.target.value})} placeholder="Neighborhood"/>
                             </div>
-                            <LocationContext.Provider value={ query => setQueries({...queries, propertiesQuery: query})}>
                                 <Dropdown
                                     query={queries.propertiesQuery}   
-                                    dropdownContents={ DropdownContent(propertiesResults)}
+                                    dropdownContents={ DropdownContent(propertiesResults, query => setQueries({...queries, propertiesQuery: query}))}
                                     onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value  })}   
                                 >
                                     <FontAwesomeIcon icon="fa-solid fa-briefcase" size="xl" className="form_icon" />
                                 </Dropdown>
-                            </LocationContext.Provider>
                             
-                            <LocationContext.Provider value={ query => setQueries({...queries, locationsQuery: query})}>
                             <Dropdown
                                 query={queries.locationsQuery}   
-                                dropdownContents={ DropdownContent(locationsResults) }
+                                dropdownContents={ DropdownContent(locationsResults,  query => setQueries({...queries, locationsQuery: query})) }
                                 onHandleChange={ e => setQueries({...queries, locationsQuery: e.target.value  })}
                             >
                                 <FontAwesomeIcon icon="fa-solid fa-location-dot" size="xl" className="form_icon" />
                             </Dropdown>
-                            </LocationContext.Provider>
-                            
-                            
+                        </div>  
                         <button className="hero_search_btn">Search</button>
                     </form>
                 </div>   

@@ -2,7 +2,7 @@ import dunao_img from './assets/dunao.png';
 import sf_img_img from './assets/san_francisco.png';
 import lp_img from './assets/Liverpool.png';
 import queens_img from './assets/queens.png';
-import newO_img from './assets/new_orleans.png';
+import newO_img from './assets/new_orleans2.png';
 import bk_img from './assets/brooklyn.png';
 import { Link } from 'react-router-dom';
 const LocationGallery = () => {

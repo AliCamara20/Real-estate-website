@@ -1,13 +1,13 @@
 import { useContext } from "react"
 import { LocationContext } from "./CategoryContext"
-export const DropdownContent = (contents) => {
+export const DropdownContent = (contents, onQuery) => {
     const locationContext = useContext(LocationContext)
     return(
         contents.length > 0 ?  contents.map( (content, cIndex) =>
             <span 
                 className="dropdown_content__content" 
                 key={cIndex}
-                onClick={() => locationContext(content)}
+                onClick={ () => onQuery(content)}
             >
                 {content}
             </span>
