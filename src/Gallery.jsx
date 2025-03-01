@@ -2,10 +2,12 @@ import photo1 from './assets/g1_p1.jpg'
 import MidSection from './MidSection'
 import CardHeader from './CardHeader'
 import PropertyLocation from './PropertyLocation'
+import { CallToActionButton } from './Packages'
 import leftArrow from './assets/left_btn_arrow.svg'
 import rightArrow from './assets/right_btn_arrow.svg'
 import { useState } from 'react'
 import {places as initialPlaces } from './Data'
+
 const Gallery = () => {
     const [places, setPlaces]  = useState(initialPlaces);
 
@@ -35,6 +37,7 @@ const Gallery = () => {
                 <div className="cards">
                     {place}
                 </div>
+                <CallToActionButton label = {'Explore More properties'} />
             </div>    
         </section>
 

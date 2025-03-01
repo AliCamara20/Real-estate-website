@@ -20,8 +20,7 @@ const Blogs = () =>{
                   <p className="blog_items_header_desc">We post regulary most powerful articles for help and support.</p>
                </div>
                <div className="blog_container__blog_sidebar row">
-                  <BlogsContainer />
-                  
+                  <BlogsContainer /> 
                </div>
                
             </div>

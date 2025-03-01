@@ -9,7 +9,6 @@ const FaQS = () => {
     
     const [selectedFaqsType, setSelectedFaqsType] = useState('general');
     const selectedFaqs = faqs.find( faq => faq.type === selectedFaqsType)
-    console.log(selectedFaqsType);
     return(
         <section className="faqs">
             <div className="faqs_hero">
