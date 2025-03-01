@@ -10,7 +10,7 @@ import NavLinks from './NavLinks';
 const Navbar = ({onShow, isVisible, onVisible}) => {
     let navClassName = 'navbar'
     if(isVisible === true) navClassName = 'navbar nav-visible';
-    console.log(isVisible);
+
 
     const layoutRef = useRef(null)
 
@@ -20,7 +20,6 @@ const Navbar = ({onShow, isVisible, onVisible}) => {
             block: 'nearest',
             inline: 'center'
         })
-        console.log(layoutRef.current.nextElementSibling)
             
     }, [isVisible]);
 
