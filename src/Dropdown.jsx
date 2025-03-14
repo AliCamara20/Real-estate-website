@@ -11,6 +11,7 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange}) => {
                     value={query} 
                     onClick={ () => setIsVisible(!isVisible)}
                     onChange={ e => onHandleChange(e)}
+                    placeholder="Select..."
                 />   
             </div>
             { isVisible && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}

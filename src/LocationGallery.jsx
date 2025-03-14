@@ -2,9 +2,10 @@ import dunao_img from './assets/dunao.png';
 import sf_img_img from './assets/san_francisco.png';
 import lp_img from './assets/Liverpool.png';
 import queens_img from './assets/queens.png';
-import newO_img from './assets/new_orleans2.png';
+import newO_img from './assets/new_orleans.png';
 import bk_img from './assets/brooklyn.png';
 import { Link } from 'react-router-dom';
+import { CallToActionButton } from './Packages';
 const LocationGallery = () => {
     return(
             <section className="section gallery location_gallery" style={{background: 'transparent'}}>
@@ -22,7 +23,8 @@ const LocationGallery = () => {
                         <Card cardImg={newO_img} l_name={'New Orleans, Louisiana'} properties={'1 property'}/>
                         <Card cardImg={queens_img} l_name={'Queens, New York'} properties={'1 property'}/>
                         <Card cardImg={bk_img} l_name={'Brooklyn, New York'} properties={'3 properties'}/>
-                    </div>                    
+                    </div>   
+                    <CallToActionButton label = {'Explore More Location'} />
                 </div>
                 
             </section>

@@ -3,8 +3,9 @@ import play_storeIcon from './assets/play_store.svg'
 import app_storeIcon from './assets/app_store.svg'
 import SocialMediaLinks from './SocialMediaLinks';
 import { Link } from 'react-router-dom';
+import FooterLinks from './FooterLinks';
 
-const Footer = () => {
+const Footer = ({onVisible}) => {
     return(
         <>  
             <footer className="section">
@@ -21,10 +22,7 @@ const Footer = () => {
                     
                         <Column >
                             <h5 className="footer_col_header">Navigations</h5>
-                            <p className="footer_pg"><Link  to = '/about' className="footer_link">About Us</Link></p>
-                            <p className="footer_pg"><Link  to = '/faqs' className="footer_link">FAQS</Link></p>
-                            <p className="footer_pg"><Link  to = '/contact' className="footer_link">Contact</Link></p>
-                            <p className="footer_pg"><Link  to = '/blogs' className="footer_link">Blogs</Link></p>
+                            <FooterLinks />
                         </Column>
                     
                         <Column>

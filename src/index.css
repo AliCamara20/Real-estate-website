@@ -7,7 +7,7 @@
 
 :root{
   --primary-font: 'Roboto';
-  --header-font: 'Jost';
+  --header-font: 'Jost', cursive;
   --primary-color: #31353f;
   --property-bg:  #f0f5fa;
   --properties-bg: #f8f8f8;
@@ -17,7 +17,7 @@
 }
 body{
   margin: 0;
-  font-family: var(--primary-font);
+  font-family: var(--primary-font), sans-serif;
 }
 
 h1, h2, h3, h4, h5{
@@ -210,7 +210,7 @@ header{
 }
 .hero{
   background-image: image-set(url('./assets/real_estate2m.jpg') 1x, url('./assets//real_estate2l.jpg') 2x );
-  height: 120vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +272,7 @@ header{
   width: 100%;
   margin: .5em 0;
   border: 1px solid  hsl(223, 39%, 91%);
-  padding: .9em;
+  padding: .5em;
   border-radius: 7px;
   display: flex;
   column-gap: 10px; 
@@ -522,8 +522,6 @@ hr{
   z-index: -1;
 }
 
-
-
 .see_more{
   background-color: #0f75e2;
   display: flex;
@@ -535,6 +533,12 @@ hr{
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.gallery .plan_btn, .location_gallery .plan_btn {
+  display: block;
+  margin: 2em auto;
+
 }
 
 
@@ -927,9 +931,7 @@ footer{
   height: 25px;
 }
 
-.search_bar{
 
-}
 
 
 .sm_link_icon:nth-child(2):hover svg >  path {
@@ -1883,10 +1885,7 @@ footer{
   background-color:#c2d2e275;
 }
 
-.blog_header{
-  padding: 3em;
-  
-}
+
 
 .header_title{
   font-size: 3.5rem;
@@ -1895,7 +1894,7 @@ footer{
 .blog_items_header{
   text-align: center;
   width: fit-content;
-  margin: auto;
+  margin: 2em auto 0;
 }
 
 .blog_items_header_title{
@@ -1903,7 +1902,7 @@ footer{
   margin: 0;
 }
 .blog_items_header_desc{
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--header-font);
   font-size: .95rem;
   margin-top: .3em;
 }
@@ -1950,11 +1949,15 @@ footer{
   color: #fff;
 }
 
-.blog_title{
+.blog__blog_title{
   margin: 0;
   text-transform: capitalize;
-  line-height: 1;
+  line-height: 1.1;
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
+  font-weight: 700;
+  
 }
+
 
 .blog_detail{
   opacity: .8;
@@ -1964,11 +1967,16 @@ footer{
 .continue_link{
   font-size: 1rem;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0 0 1em 0;
   color:#0666cc;
   font-weight: 490;
   cursor: pointer;
+}
+
+.continue_link__icon{
+  margin-left: .4em;
 }
 
 .search_box{
@@ -1986,6 +1994,7 @@ footer{
   align-items: center;
   border-radius: 4px;
   border: 1px solid #deeefa;
+  width: 100%;
 
 }
 
@@ -1999,6 +2008,7 @@ footer{
   background-color: transparent;
   border: none;
   outline: none;
+  width: 100%;
 
 }
 
@@ -2016,6 +2026,7 @@ footer{
 
 .search_bar .search_button .search_btn_img{
   color: #fff;
+
 }
 .search_bar .search_input::placeholder{
   font-family: var(--header-font);
@@ -2078,7 +2089,6 @@ footer{
   line-height: 1.5;
   color: #222;
 }
-
 
 .tag{
   font-family: var(--header-font);
@@ -2193,12 +2203,10 @@ footer{
 
 .agents_grid{
   gap: 1em;
-  border: 1px solid red;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  flex: none;
- 
+  width: 1100px;
+  display: flex;
+  flex-wrap: nowrap;
+  
 }
 
 .agents_grid + .agents_grid{
@@ -2213,7 +2221,8 @@ footer{
   align-items: center;
   margin: 1.2em 0;  
   filter: drop-shadow(0 0 5px #d8d8f5);
-  width: 100%;
+  width: 260px;
+  
 }
 
 .agent_img{
@@ -2304,8 +2313,6 @@ footer{
   margin: 3em 0;
 }
 
-.selected_blog{
-}
 
 .selected_blog .selected_blog_img{
   border-radius: 10px;
@@ -2748,6 +2755,74 @@ footer{
   background-color: dodgerblue;
 }
 
+
+.ai_agent{
+  background-color: rgb(245, 237, 237);
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 5000;
+  column-gap: .5em;
+  box-shadow: 0 6px 12px 0 rgb(190, 188, 188);
+  cursor: pointer;
+
+
+}
+
+.ai_agentLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai_agentImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ai_agentDesc{
+  font-family: 'Alfa Slab One', cursive;
+  position: absolute;
+  bottom: 85%;
+  white-space: nowrap;
+  background-color: whitesmoke;
+  padding: .2em .5em;
+  border-radius: 4px;
+  display: none;
+  font-size: .9rem;
+  font-weight: 800;
+  color: #333;
+  transition: .5s ease;
+
+}
+
+.ai_agentDesc::after{
+  content: '';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: #fff transparent transparent transparent;
+
+}
+
+.ai_agent:hover .ai_agentDesc{
+  display: block;
+
+}
+
+
+
 @media  (min-width: 700px){
   .row{
     display: flex;
@@ -2896,6 +2971,9 @@ footer{
     border-right: 0;
   
   }
+
+
+ 
   
  
 }
