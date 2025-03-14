@@ -2761,8 +2761,8 @@ footer{
   width: 60px;
   height: 60px;
   position: fixed;
-  bottom: 3em;
-  right: 3.5em;
+  bottom: 2em;
+  right: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
