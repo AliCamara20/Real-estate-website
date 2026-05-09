@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5{
 button, input, a{
   outline: none;
 }
+button{
+  cursor: pointer;
+}
 
 .section{
   padding: 4em 0;
@@ -67,7 +70,7 @@ header{
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: .98rem;
+  font-size: 1.1rem;
   font-family: var(--header-font);
   font-weight: 500;
   
@@ -1910,7 +1913,7 @@ footer{
 }
 .blog_items_header_desc{
   font-family: var(--header-font);
-  font-size: .95rem;
+  font-size: 1.2rem;
   margin-top: .3em;
 }
  
@@ -1969,10 +1972,11 @@ footer{
 .blog_detail{
   opacity: .8;
   line-height: 1.5;
+  font-size: 1.05rem;
   
 }
 .continue_link{
-  font-size: 1rem;
+  font-size: 1.09rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -2106,6 +2110,7 @@ footer{
   border: 1px solid #ddd;
   padding: .5em 1.5em;
   margin: .3em 0;
+  transition: all .5s ease;
  
 }
 
