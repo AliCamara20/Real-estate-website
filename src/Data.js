@@ -33,7 +33,7 @@ export const reviews = [
     {
         id: 0, 
         img: rev_2, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "The entire process was smooth, professional, and very well-organized from start to finish. I truly appreciate the constant support and clear guidance provided throughout.",
         customer_name: 'Shilpa Shethy', 
         customer_position : 'CEO Of Zapple'
 
@@ -42,7 +42,7 @@ export const reviews = [
     {
         id: 1, 
         img: rev_1, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "Excellent service and clear communication throughout every stage of the process. The team was always responsive, helpful, and made everything easy to understand.",
         customer_name: 'Adam Williams', 
         customer_position: 'Founder Of Microwoft'
 
@@ -51,7 +51,7 @@ export const reviews = [
     {
         id: 2, 
         img: rev_5, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "They guided me step by step and helped me find the perfect property quickly and efficiently, without any unnecessary stress or delays along the way.",
         customer_name: 'Usan Gulwarm', 
         customer_position: 'CEO Of Faceworm'
 
@@ -60,7 +60,7 @@ export const reviews = [
     {
         id: 3, 
         img: rev_4, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "A very reliable and professional team that made the whole buying experience simple, easy, and completely stress-free from beginning to final completion.",
         customer_name: 'Retha Deowalim', 
         customer_position: 'CEO Of Apple'
 
@@ -70,7 +70,7 @@ export const reviews = [
     {
         id: 4, 
         img: rev_3, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "I had a wonderful experience working with this team, as they were patient, attentive, and always willing to go the extra mile to ensure everything went smoothly",
         customer_name: 'Sam J. Wasim', 
         customer_position: 'Pio Founder'
 

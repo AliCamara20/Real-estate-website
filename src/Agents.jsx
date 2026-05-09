@@ -18,7 +18,7 @@ const Agents = () => {
     useLayoutEffect(() => {
        
         intervalRef.current =  setInterval(() => {
-            containerRef.current.scrollLeft  = (containerRef.current.scrollLeft + (containerRef.current.scrollWidth / 2)) % (containerRef.current.scrollWidth)
+            // containerRef.current.scrollLeft  = (containerRef.current.scrollLeft + (containerRef.current.scrollWidth / 2)) % (containerRef.current.scrollWidth)
             //setActiveIndex( index =>  (index + 1) % 4);  
 
                  

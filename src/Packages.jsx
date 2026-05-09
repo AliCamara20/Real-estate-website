@@ -4,9 +4,10 @@ const Packages = () => {
             <div className="container">
                 <h2 className="section_header">See Our Packages</h2>
                 <p className="section_detail">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus 
-                    qui blanditiis praesentium voluptatum deleniti atque 
-                    corrupti quos dolores
+                    Explore our flexible property listing packages designed to meet 
+                    your needs. Choose the option that best fits your goals and enjoy 
+                    features that help showcase your property effectively.
+
                 </p>
                 <div className="package_cards cards">
                 <Package package_price={199} package_type={'Standard package'} num_of_listing={50} extension={'standard'} />

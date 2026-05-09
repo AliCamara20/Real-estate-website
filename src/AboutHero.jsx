@@ -8,17 +8,17 @@ const AboutHero = () => {
                     <h2 className="about_hero-text__header">Our Story</h2>
                     <div className="about_hero-text__details">
                         <p className="about_hero-text__detail">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip ex ea 
-                            commodo consequat.
+                            Resido is a trusted real estate company dedicated to helping 
+                            people buy, sell, and rent properties with ease and confidence. 
+                            We focus on creating smooth, transparent, and stress-free 
+                            property experiences by connecting clients with the right homes, 
+                            opportunities, and professional guidance every step of the way.
                         </p>
                         <p className="about_hero-text__detail">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip.
+                            Founded by a team of experienced real estate professionals, 
+                            Resido was built on the values of integrity, reliability, and customer 
+                            satisfaction. Over time, we have grown into a platform that connects 
+                            people to homes and investment opportunities that truly match their needs.
                         </p>
                     </div>
                 </div>

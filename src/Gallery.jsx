@@ -29,9 +29,11 @@ const Gallery = () => {
             <div className="container">
                 <h2 className="section_header">Explore Good Places</h2>
                 <p className="section_detail">
-                    At vero eos et accusamus et iusto odio dignissimos 
-                    ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores
+                    Explore great locations that offer comfort, convenience, 
+                    and a high quality of life. From peaceful neighborhoods to 
+                    thriving city areas, find properties in places that suit your 
+                    lifestyle and bring you closer to the things that matter most.
+
                 </p>
 
                 <div className="cards">

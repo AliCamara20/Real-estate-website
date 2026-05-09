@@ -12,9 +12,11 @@ const LocationGallery = () => {
                     <div className="container">
                     <h2 className="section_header">Find by Location</h2>
                     <p className="section_detail">
-                        At vero eos et accusamus et iusto odio dignissimos
-                        ducimus qui blanditiis praesentium voluptatum deleniti 
-                        atque corrupti quos dolores.
+                        Browse properties by location and discover homes in neighborhoods
+                        that fit your lifestyle. Explore a wide range of options in prime 
+                        areas, from vibrant city centers to peaceful residential 
+                        communities.
+
                     </p>
                     <div className="cards location_cards">
                         <Card cardImg={sf_img_img} l_name={'San Francisco, California'} properties={'1 property'} />
