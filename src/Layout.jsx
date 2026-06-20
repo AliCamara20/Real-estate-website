@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import {useState } from "react";
 import { Outlet } from "react-router-dom";
 import AI_Agent from "./AI_Agent";
+import SignupPage from "./SignupPage";
 const Layout  = () => {
     const [show, setShow] = useState(false);
     const[isVisible, setIsVisible] = useState(false);

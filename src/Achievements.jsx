@@ -10,9 +10,10 @@ const Achievements = () => {
             <div className="container">
                 <h2 className="section_header">Achievements</h2>
                 <p className="section_detail">
-                    At vero eos et accusamus et iusto odio dignissimos 
-                    ducimus qui blanditiis praesentium voluptatum deleniti 
-                    atque corrupti quos dolores.
+                    Over the years, we have successfully helped countless clients find their ideal
+                    properties while building a reputation for trust, excellence, and customer satisfaction. 
+                    Our commitment to quality service, innovative solutions, and lasting client relationships 
+                    continues to drive our growth and success in the real estate industry.
                 </p>
                 <div className="columns row">
                     <Column colImg={completedProperty} 

@@ -5,7 +5,7 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange, visible, o
     return(
 
         <div className="dropdown" >
-            <div className="dropdown_inputField">
+            <label className="dropdown_inputField">
                 {children}
                 <input type="text" className="dropdown_input"
                     value={query} 
@@ -13,7 +13,7 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange, visible, o
                     onChange={ e => onHandleChange(e)}
                     placeholder="Select..."
                 />   
-            </div>
+            </label>
             { visible  && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}
         </div>
     )
