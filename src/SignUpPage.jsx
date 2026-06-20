@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom"
 function SignUpPage(){
     return(
         <section className="modal_container" >
@@ -20,7 +20,7 @@ function SignUpPage(){
                                 <label htmlFor="confirmPsswd">Confirm Password</label> 
                                 <input type="password" className="password" id="confirmPsswd" required/>
                             </div>
-                            <button className="logIn_btn">Sign Up</button>
+                            <button className="logIn_btn"> <Link to= "/">Sign Up</Link></button>
                         </form>
 
                     </div>
