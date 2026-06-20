@@ -2235,7 +2235,26 @@ footer{
 }
 
 .agents_container::-webkit-scrollbar{
-  display: none;
+  display: block;
+  height: 10px;
+}
+.agents_container::-webkit-scrollbar-thumb{
+  background-color: #b6d0ec;
+  border-radius: 1000px;
+  width: 10%;
+  
+  
+}
+.agents_container::-webkit-scrollbar-track{
+  background-color: #e9e9ee ;
+  border-radius: 1000px;
+  
+
+}
+.agents_container::-webkit-scrollbar-corner{
+  background-color: #eeeef7;
+  border-radius: 1000px;
+ 
 }
 
 
