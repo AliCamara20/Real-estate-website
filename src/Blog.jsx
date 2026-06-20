@@ -7,11 +7,12 @@ import SocialMediaLinks from "./SocialMediaLinks";
 import Comments, { Bloggger } from "./Comments";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PrevNext from "./PrevNext";
+import useScrollToTop from "./ScrollToTop";
 const Blog = ()=> {
     const[blogs, setBlogs] = useState(blogData);
     const {blogId} = useParams();
     const selectedBlog = blogs.find( blog => blog.id === Number(blogId));
-
+     useScrollToTop();
     return(
 
         <section className="selected_blog_section property_list">

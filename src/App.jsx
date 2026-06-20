@@ -11,28 +11,26 @@ import ErrorPage from "./ErrorPage"
 import FaQS from "./FAQS"
 import LocationMap from "./Map"
 import SignUpPage from "./SignUpPage"
+import ScrollToTop from "./ScrollToTop"
 
 
 function App() {
-
-  
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element = {<Layout />}>
-          <Route index element = { <Home />} />
-          <Route path="place/:placeId" element = {<Place />} />
-          <Route path="properties/:locationName" element = {<PropertyList/>} />
-          <Route path="about" element = {<About />} />
-          <Route path="blogs" element = {<Blogs />} />
-          <Route path="blogs/:blogId" element = {<Blog />} />
-          <Route path="contact" element = {<Contact />} />
-          <Route path="faqs" element = {<FaQS />} />
-          <Route path="*" element = {<ErrorPage />} />
-        </Route>
-        <Route path="signup" element = {<SignUpPage />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element = {<Layout />}>
+            <Route index element = { <Home />} />
+            <Route path="place/:placeId" element = {<Place />} />
+            <Route path="properties/:locationName" element = {<PropertyList/>} />
+            <Route path="about" element = {<About />} />
+            <Route path="blogs" element = {<Blogs />} />
+            <Route path="blogs/:blogId" element = {<Blog />} />
+            <Route path="contact" element = {<Contact />} />
+            <Route path="faqs" element = {<FaQS />} />
+            <Route path="*" element = {<ErrorPage />} />
+          </Route>
+          <Route path="signup" element = {<SignUpPage />} />
+        </Routes>
     </BrowserRouter>  
   )
     

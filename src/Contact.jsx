@@ -1,8 +1,11 @@
 import { CallToActionButton } from "./Packages"
 import ContactInfo from "./ContactInfo"
 import ContactForm from "./ContactForm"
+import useScrollToTop from "./ScrollToTop"
 
 const Contact = () =>{
+    
+   useScrollToTop();
   return  (
     <section className="contact property_list">
       <div className="prop_list_header">

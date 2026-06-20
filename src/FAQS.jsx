@@ -5,10 +5,13 @@ import FAQsButtons from './SelectionButtons'
 import { useState } from 'react'
 import { faqs  } from './Data'
 import FAQsPanels from './FAQPanel'
+import useScrollToTop from './ScrollToTop'
 const FaQS = () => {
     
     const [selectedFaqsType, setSelectedFaqsType] = useState('general');
     const selectedFaqs = faqs.find( faq => faq.type === selectedFaqsType)
+
+    useScrollToTop();
     return(
         <section className="faqs">
             <div className="faqs_hero">

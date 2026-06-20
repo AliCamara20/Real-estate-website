@@ -21,7 +21,6 @@ const Hero = () => {
     const locationsResults = filterItems(locations, queries.locationsQuery);
     const[isVisible, setIsVisible] = useState(0);
 
-   console.log(`visiblility ID: ${isVisible}` )
     
    function handleDropdown(id){
     setIsVisible( isVisible === id ? 0 : id)

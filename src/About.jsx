@@ -1,8 +1,11 @@
+import { useEffect } from "react"
 import AboutHero from "./AboutHero"
 import Agents from "./Agents"
 import MissionStatement from "./MissionStatement"
-
+import useScrollToTop from "./ScrollToTop"
 const About = () =>{
+
+    useScrollToTop();
     return(
         <section className="about_us property_list">
             <div className="prop_list_header">
