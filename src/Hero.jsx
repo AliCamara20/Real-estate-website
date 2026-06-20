@@ -19,11 +19,15 @@ const Hero = () => {
     const [queries, setQueries] = useState(initialQueries);
     const propertiesResults = filterItems(properties, queries.propertiesQuery);
     const locationsResults = filterItems(locations, queries.locationsQuery);
+    const[isVisible, setIsVisible] = useState(0);
 
-   
+   console.log(`visiblility ID: ${isVisible}` )
     
+   function handleDropdown(id){
+    setIsVisible( isVisible === id ? 0 : id)
+   }
     return(
-        <section className="hero">
+        <section className="hero"  >
             <div className="hero_text">
                 <div className="container">
                     <h1 className="hero_title">
@@ -41,7 +45,9 @@ const Hero = () => {
                                 <Dropdown
                                     query={queries.propertiesQuery}   
                                     dropdownContents={ DropdownContent(propertiesResults, query => setQueries({...queries, propertiesQuery: query}))}
-                                    onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value  })}   
+                                    onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value  })}  
+                                    visible={isVisible === 1}
+                                    onVisible={() => handleDropdown(1)}
                                 >
                                     <FontAwesomeIcon icon="fa-solid fa-briefcase" size="xl" className="form_icon" />
                                 </Dropdown>
@@ -50,6 +56,8 @@ const Hero = () => {
                                 query={queries.locationsQuery}   
                                 dropdownContents={ DropdownContent(locationsResults,  query => setQueries({...queries, locationsQuery: query})) }
                                 onHandleChange={ e => setQueries({...queries, locationsQuery: e.target.value  })}
+                                visible={isVisible === 2}
+                                onVisible={() => handleDropdown(2)}
                             >
                                 <FontAwesomeIcon icon="fa-solid fa-location-dot" size="xl" className="form_icon" />
                             </Dropdown>

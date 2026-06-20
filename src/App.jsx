@@ -10,7 +10,7 @@ import PropertyList from "./PropertyList"
 import ErrorPage from "./ErrorPage"
 import FaQS from "./FAQS"
 import LocationMap from "./Map"
-
+import SignUpPage from "./SignUpPage"
 
 
 function App() {
@@ -18,8 +18,6 @@ function App() {
   
 
   return (
-
-    
     <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Layout />}>
@@ -33,9 +31,9 @@ function App() {
           <Route path="faqs" element = {<FaQS />} />
           <Route path="*" element = {<ErrorPage />} />
         </Route>
+        <Route path="signup" element = {<SignUpPage />} />
       </Routes>
-    </BrowserRouter>
-    
+    </BrowserRouter>  
   )
     
 

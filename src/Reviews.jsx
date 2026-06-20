@@ -30,9 +30,9 @@ import {flushSync} from 'react-dom'
                     Good Reviews By Customers
                 </h2>
                 <p className="section_detail">
-                    At vero eos et accusamus et iusto odio dignissimos 
-                    ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores
+                   See what our satisfied clients have to say about their experience. 
+                   Their feedback reflects our commitment to providing reliable service 
+                   and successful property solutions.
                 </p>
                  <div className="review_box" >
                     <div className="review_cards" >

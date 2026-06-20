@@ -1,20 +1,20 @@
 import { useState } from "react";
-const Dropdown = ({query, dropdownContents, children, onHandleChange}) => {
+const Dropdown = ({query, dropdownContents, children, onHandleChange, visible, onVisible}) => {
     const [isVisible, setIsVisible]  = useState(false);
     
     return(
 
         <div className="dropdown" >
-            <div className="dropdown_inputField">
+            <label className="dropdown_inputField">
                 {children}
                 <input type="text" className="dropdown_input"
                     value={query} 
-                    onClick={ () => setIsVisible(!isVisible)}
+                    onClick={onVisible}
                     onChange={ e => onHandleChange(e)}
                     placeholder="Select..."
                 />   
-            </div>
-            { isVisible && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}
+            </label>
+            { visible  && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}
         </div>
     )
 }

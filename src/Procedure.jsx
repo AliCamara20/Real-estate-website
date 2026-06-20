@@ -8,25 +8,22 @@ const Procedures  = () => {
             <div className="container">
                 <h2 className="section_header">How it works?</h2>
                 <p className="section_detail">
-                    At vero eos et accusamus et iusto odio dignissimos 
-                    ducimus qui blanditiis praesentium voluptatum deleniti 
-                    atque corrupti quos dolores.
+                    Our simple three-step process makes buying, selling, or renting property 
+                    easy. From evaluating the property to connecting with an agent and 
+                    closing the deal, we guide you every step of the way.
                 </p>
                 <div className="procedural_cards row">
                    <Card icon={mapIcon} step={1} label={'Evaluate the property'} >
-                        There are many variations of passages 
-                        of Lorem Ipsum available, but the 
-                        majority have Ipsum available.
+                        We carefully assess the property's value, condition, 
+                        and market potential to determine the best opportunities available.
                    </Card>
                    <Card icon={usersIcon} step={2} label={'Meet Your Agent'} >
-                        There are many variations of passages
-                        of Lorem Ipsum available, but the 
-                        majority have Ipsum available.
+                        Connect with our professional agents who provide guidance, 
+                        answer questions, and support your property journey.
                    </Card>
                    <Card icon={dealIcon} step={3} label={'Close The Deal'} >
-                        There are many variations of passages 
-                        of Lorem Ipsum available, but the 
-                        majority have Ipsum available.
+                        Complete the transaction smoothly with expert assistance, 
+                        ensuring a secure and successful property transfer.
                    </Card>
                 </div>
             </div>

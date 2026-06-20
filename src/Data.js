@@ -33,7 +33,7 @@ export const reviews = [
     {
         id: 0, 
         img: rev_2, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "The entire process was smooth, professional, and very well-organized from start to finish. I truly appreciate the constant support and clear guidance provided throughout.",
         customer_name: 'Shilpa Shethy', 
         customer_position : 'CEO Of Zapple'
 
@@ -42,7 +42,7 @@ export const reviews = [
     {
         id: 1, 
         img: rev_1, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "Excellent service and clear communication throughout every stage of the process. The team was always responsive, helpful, and made everything easy to understand.",
         customer_name: 'Adam Williams', 
         customer_position: 'Founder Of Microwoft'
 
@@ -51,7 +51,7 @@ export const reviews = [
     {
         id: 2, 
         img: rev_5, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "They guided me step by step and helped me find the perfect property quickly and efficiently, without any unnecessary stress or delays along the way.",
         customer_name: 'Usan Gulwarm', 
         customer_position: 'CEO Of Faceworm'
 
@@ -60,7 +60,7 @@ export const reviews = [
     {
         id: 3, 
         img: rev_4, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "A very reliable and professional team that made the whole buying experience simple, easy, and completely stress-free from beginning to final completion.",
         customer_name: 'Retha Deowalim', 
         customer_position: 'CEO Of Apple'
 
@@ -70,7 +70,7 @@ export const reviews = [
     {
         id: 4, 
         img: rev_3, 
-        info: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores',
+        info: "I had a wonderful experience working with this team, as they were patient, attentive, and always willing to go the extra mile to ensure everything went smoothly",
         customer_name: 'Sam J. Wasim', 
         customer_position: 'Pio Founder'
 
@@ -275,32 +275,53 @@ export const blogData = [
         id: 0,
         blog_img: blog_img7,
         title: 'What are people saying about Resido properties', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: 'Resido Properties is known for its reliable services, quality listings, and customer-focused approach, earning positive feedback from clients.', 
         published_at: 'March 19 2023', 
-        comments: 0
+        info: `Resido Properties has built a strong reputation in the real estate industry 
+            by consistently delivering quality services and reliable property solutions. 
+            Many clients appreciate the company's commitment to transparency, 
+            professionalism, and customer satisfaction. Whether purchasing a dream home, 
+            renting a property, or making an investment, customers often highlight the 
+            ease and confidence they experience when working with Resido.`,
+        moreInfo: `The positive feedback surrounding Resido Properties is also driven by its knowledgeable team and personalized approach. Clients value the guidance they receive throughout the buying and selling process, making complex transactions simpler and more efficient. This dedication to excellence has helped Resido establish long-term relationships and earn the trust of property seekers and investors alike.`,
+        hotComment: `I recently purchased a property through Resido, and the entire experience was smooth and professional. Their team was always available to answer my questions and helped me find the perfect home within my budget.`, 
+        commentor: "Rosaline Pong",
+        comments: 4
     },
        
     {
         id: 1,
         blog_img: blog_img8,
         title: 'List of benifits and impressive listeo services', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: 'Listeo offers easy property management, verified listings, advanced search tools, and excellent customer support.', 
+        info: `Listeo offers a modern and convenient platform designed to simplify property management and real estate listings. One of its biggest advantages is its user-friendly interface, allowing property owners and agents to create, manage, and promote listings with ease. Advanced search features and organized property information help users quickly find properties that match their needs.`,
+        moreInfo: `In addition to its powerful listing tools, Listeo provides excellent support and features that improve visibility for property owners. From streamlined communication options to efficient property management capabilities, the platform helps users save time while maximizing opportunities. These benefits make Listeo a valuable solution for both real estate professionals and property owners.`,
+        hotComment: 'Listeo made managing my property listings incredibly easy. The platform is user-friendly, and I received several inquiries within days of posting my property.',
+        commentor: 'John Dawson',
         published_at: 'May 29 2023', 
-        comments: 3
+        comments: 4
     },
     {
         id: 2,
         blog_img: blog_img3,
         title: 'Resido Clients Are Happy With The Services', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: "Clients appreciate Resido's professionalism, smooth transactions, and dedicated support throughout the property journey.", 
+        info: `Client satisfaction remains one of the key reasons behind Resido's continued success. Customers frequently praise the company for its professional service, responsive communication, and dedication to meeting their needs. Whether helping first-time buyers or experienced investors, Resido focuses on providing a smooth and stress-free experience from start to finish.`,
+        moreInfo: `The company's customer-first approach has resulted in many positive experiences and repeat clients. By offering personalized solutions and expert market knowledge, Resido ensures that every client feels supported throughout the process. This commitment to excellence continues to strengthen its reputation as a trusted real estate partner.`,
+        hotComment: `Resido exceeded my expectations with their excellent customer service. They guided me through every step of the process and made what could have been a stressful experience completely hassle-free.`,
+        commentor: "Munir Yasir",
         published_at: 'Jan 23 2024', 
-        comments: 5
+        comments: 4
     },
     {
         id: 3,
         blog_img: blog_img9,
         title: 'The Services Resido Provides Will Impress', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: 'From property sales and rentals to expert advice, Resido delivers comprehensive real estate solutions.', 
+        info: `Resido offers a complete range of real estate services designed to meet the needs of buyers, sellers, landlords, and investors. From property sales and rentals to market analysis and investment guidance, the company provides professional support at every stage of the property journey. Its experienced team works closely with clients to deliver solutions tailored to their goals.`,
+        moreInfo: `What makes Resido stand out is its dedication to quality service and attention to detail. Every transaction is handled with professionalism, ensuring clients receive accurate information and expert advice. This comprehensive approach helps clients make informed decisions while enjoying a seamless real estate experience.`,
+        hotComment: `I was impressed by the range of services Resido offers. From property valuation to closing the deal, their expertise and attention to detail were outstanding.`,
+        commentor: `Sheikh Tijan Sillah`,
         published_at: 'March 19 2024', 
         comments: 4
     },
@@ -308,18 +329,26 @@ export const blogData = [
         id: 4,
         blog_img: blog_img5,
         title: 'Why people choose listio for own properties', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: 'Listeo helps property owners reach more buyers and tenants through a simple and effective listing platform.',
+        info: `Property owners choose Listeo because it offers an efficient and reliable way to showcase their properties to potential buyers and tenants. The platform provides easy listing management, attractive property displays, and tools that help increase visibility in a competitive market. These features make it easier for owners to connect with interested prospects.`,
+        moreInfo: `Beyond its ease of use, Listeo helps property owners save time and improve marketing results. With organized management tools and user-friendly functionality, owners can focus on growing their property portfolio while reaching a wider audience. This combination of convenience and effectiveness makes Listeo a preferred choice for property listings.`,
+        hotComment: `As a property owner, Listeo has been a great tool for marketing my rentals. The platform is simple to use, and it has helped me connect with quality tenants quickly`,
+        commentor: `Ebrahima Secka`,
         published_at: 'Nov 21 2024', 
-        comments: 7
+        comments: 4
     },
 
     {
         id: 5,
         blog_img: blog_img6,
         title: 'Why Resido is been popular all this years', 
-        detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 
+        detail: 'Resido remains popular due to its trusted reputation, quality service, and commitment to client satisfaction.',
+        info: `Resido has remained popular over the years because of its consistent commitment to delivering excellent real estate services. The company has built a reputation based on trust, reliability, and customer satisfaction, helping clients achieve their property goals with confidence. Its ability to adapt to changing market trends has also contributed to its long-term success.`,
+        moreInfo: `Another reason for Resido's popularity is its focus on building lasting relationships with clients. By prioritizing transparency, professionalism, and personalized support, the company continues to earn positive recommendations and repeat business. This strong foundation has helped Resido maintain its position as a respected name in the real estate industry.`,
+        hotComment: `I've worked with Resido multiple times over the years, and their professionalism has always remained consistent. It's easy to see why so many people trust them for their real estate needs.`,
+        commentor: `Sallima Nureldiin`, 
         published_at: 'Jan 12 2025', 
-        comments: 25
+        comments: 4
     },
        
        
