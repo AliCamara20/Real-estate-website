@@ -39,7 +39,10 @@ const LocationGallery = () => {
 const Card = ({cardImg, l_name, properties}) => {
     return(
         <div className="location_card" >
-            <img src={cardImg} alt="" className="location_card_img" />
+            <Link to={`properties/${l_name}`}>
+                <img src={cardImg} alt="" className="location_card_img" />
+            </Link>
+           
             <div className="location_card_desc  row_section">
                 <div className="col_1">
                     <h4 className="location_name">{l_name}</h4>

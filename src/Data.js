@@ -371,26 +371,29 @@ export const tags  = ['Apartment', 'Confy', 'Couple', 'Family',
  export const faqs = [
     {
         type: 'general',
-        questions: ['How To Install Rikanda Theme',
-            'What is main Requirement For Rikanda', 
-            'Why Choose Rikanda Theme'
+        questions: [
+            {id: 0, quest: 'How To Install Rikanda Theme', ans: 'Installing the Rikanda Theme is quick and easy. Simply upload the theme files to your website, activate the theme, and follow the setup wizard to configure the basic settings. You can then customize the design and content to match your real estate business.'},
+            {id: 1, quest: 'What is main Requirement For Rikanda', ans: 'Rikanda requires a compatible and up-to-date WordPress installation, along with the recommended plugins and hosting environment, to ensure optimal performance and access to all theme features.'},
+            {id: 2, quest: 'Why Choose Rikanda Theme', ans: 'Rikanda is designed specifically for real estate websites, offering a modern design, user-friendly customization options, responsive layouts, and powerful property listing features to help you create a professional online presence with ease.'}
         ]
 
     },
     {
         type: 'payment',
-        questions: ['May I Request For Refund',
-            'May I Get Any Offer in Future', 
-            'How Much Time It will Take For Refund'
+        questions: [ 
+            {id: 0, quest: 'May I Request For Refund', ans: 'Yes, refund requests are accepted according to our refund policy. If you are not satisfied with your purchase, please contact our support team within the eligible refund period for assistance'},
+            {id: 1, quest: 'May I Get Any Offer in Future', ans: 'Yes, we occasionally run special promotions, discounts, and exclusive offers for our customers. Subscribe to our newsletter or follow our updates to stay informed about upcoming deals.'},
+            {id: 2, quest: 'How Much Time It will Take For Refund', ans: 'Refunds are typically processed within a few business days after approval. The exact time may vary depending on your payment provider and banking institution.'}
         ]
 
     },
 
     {
         type: 'upgrade',
-        questions: ['How To Upgrade Rikanda Theme',
-            'Rikada Available for WordPress Version', 
-            'Why We need to upgrade Rikada'
+        questions: [
+            {id: 0, quest: 'How To Upgrade Rikanda Theme', ans: 'Upgrading Rikanda is simple. Download the latest version of the theme, upload it through your WordPress dashboard, and activate the update. We recommend backing up your website before performing any upgrade.'},
+            {id: 1, quest: 'Is Rikanda Available for WordPress Version', ans: 'Yes, Rikanda is fully compatible with WordPress and is designed to work seamlessly with the latest versions of the platform, providing an easy and flexible website-building experience.'},
+            {id: 2, quest: 'Why Do We need to upgrade Rikanda', ans: 'Upgrading Rikanda ensures you get the latest features, performance improvements, bug fixes, and security updates, helping your website stay fast, secure, and fully compatible with the latest WordPress version.'}
         ]
 
     }

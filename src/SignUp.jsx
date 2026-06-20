@@ -8,7 +8,9 @@ const SignUp  = () => {
                         <h3 className="sign_up_header">Want to Become a Real Estate Agent</h3>
                         <p className="col_detail">We'll help you to grow your career and growth.</p>
                     </div>
-                    <button className="sign_up_btn"><Link to="/signup">SignUp Today</Link></button>   
+                    
+                    <Link to="/signup" className="sign_up_btn">SignUp Today</Link>
+                      
                 </div>
             </div>
         </section>

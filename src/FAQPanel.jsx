@@ -3,12 +3,13 @@ import { useState } from "react"
 const FAQsPanels = ({faq}) => {
     const defaultExpandable = faq.questions[0];
     const [isExpanded, setIsExpanded] = useState(defaultExpandable);
+    console.log(`FAQs: ${faq.questions}`);
     return(
         <div className="faq_panels">
-            {faq.questions.map( quest=> {
+            {faq.questions.map( quest => {
                 return(
                     <FAQPanel 
-                    key={quest} 
+                    key={quest.quest} 
                     faq={quest} 
                     isExpanded={isExpanded === quest}
                     onExpand={() => setIsExpanded(quest)}
@@ -23,15 +24,11 @@ const FAQsPanels = ({faq}) => {
 
 const FAQPanel = ({faq, isExpanded, onExpand}) => {
     return(
-        <div className="faq_panel">
-            <p className="faq_panel_question" onClick={onExpand}>{faq}</p>
+        <div className="faq_panel" onClick={onExpand}>
+            <p className="faq_panel_question" >{faq.quest}</p>
             {isExpanded &&
                 <p className="faq_panel_answer">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life 
-                    accusamus terry richardson ad squid. 3 wolf moon officia 
-                    aute, non cupidatat skateboard dolor brunch. Food truck 
-                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon 
-                    tempor, sunt aliqua put a bird on it squid single-origin.
+                   {faq.ans}
                     
                 </p>
 }           

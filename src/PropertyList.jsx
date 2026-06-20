@@ -7,9 +7,11 @@ import { places } from "./Data";
 import CardHeader from "./CardHeader";
 import MidSection from "./MidSection";
 import PropertyLocation from "./PropertyLocation";
+import useScrollToTop from "./ScrollToTop";
 
 const PropertyList = () => {
     const {locationName} = useParams();
+    useScrollToTop();
     return(
         <section className="property_list">
             <div className="prop_list_header">
