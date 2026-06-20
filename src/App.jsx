@@ -10,8 +10,7 @@ import PropertyList from "./PropertyList"
 import ErrorPage from "./ErrorPage"
 import FaQS from "./FAQS"
 import LocationMap from "./Map"
-import SignupPage from "./SignupPage"
-
+import SignUpPage from "./SignUpPage"
 
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
           <Route path="faqs" element = {<FaQS />} />
           <Route path="*" element = {<ErrorPage />} />
         </Route>
-        <Route path="signup" element = {<SignupPage />} />
+        <Route path="signup" element = {<SignUpPage />} />
       </Routes>
     </BrowserRouter>  
   )
