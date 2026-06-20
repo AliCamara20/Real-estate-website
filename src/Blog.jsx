@@ -33,43 +33,13 @@ const Blog = ()=> {
                                 <p className="blog_comments">{selectedBlog.comments} Comments</p>
                             </div>
                             <h2 className="blog_title">{selectedBlog.title}</h2>
-                            <p className="blog_detail">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloremque, recusandae rerum sint eveniet deleniti labore 
-                                voluptatibus commodi autem doloribus voluptatum nesciunt 
-                                quae qui eius, voluptates in dicta cumque corrupti ducimus 
-                                adipisci fugiat sapiente asperiores cupiditate! Ab temporibus 
-                                dolorem, aut cum expedita nulla doloribus atque dolor est 
-                                officiis cupiditate quia tenetur quos? Dicta, ea quisquam 
-                                sequi exercitationem error aperiam totam dolore, minima 
-                                saepe reprehenderit inventore. Atque quisquam exercitationem 
-                                veritatis tempore sequi doloremque recusandae. Culpa laudantium, 
-                                minima a sed expedita alias optio. Rem magnam odio rerum? 
-                                Ab, perferendis? Distinctio dolores doloribus ratione 
-                                expedita a neque dignissimos, earum quas alias officiis 
-                                laudantium libero?
-                            </p>
-                            <p className="blog_detail">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Nisi velit alias ipsam perferendis repellat, voluptatibus 
-                                beatae accusantium, quis aperiam nihil sed porro hic quisquam, 
-                                praesentium architecto officiis maiores consequatur eligendi 
-                                vel corrupti consequuntur repellendus? Necessitatibus, 
-                                aspernatur corporis labore laboriosam saepe quae sint 
-                                asperiores quos commodi, pariatur ipsam modi dignissimos 
-                                consectetur cupiditate! Unde, labore placeat! Itaque 
-                                repellendus quasi iste impedit id.
-                            </p>
+                            <p className="blog_detail">{selectedBlog.info}</p>
+                            <p className="blog_detail">{selectedBlog.info2}</p>
                             <p className="blog_detail quote row">
                                 <FontAwesomeIcon icon="fa-solid fa-quote-left" size="2xl" className="quotation" />
                                 <span className="quote__quote">
-                                    Lorem ipsum dolor sit amet, consectetur 
-                                    adipisicing elit, sed do eiusmod tem ut 
-                                    labore et dolore magna aliqua. Ut enim ad 
-                                    minim veniam, quis nostrud ullamco laboris nisi 
-                                    ut aliquip ex ea commodo onsequat.
-
-                                    <span className="quote__author">- Rosaline Pong</span>
+                                    {selectedBlog.hotComment}
+                                <span className="quote__author">- {selectedBlog.commentor}</span>
 
                                 </span>
                             </p>
