@@ -815,6 +815,7 @@ hr{
   background-color: rgb(79, 79, 241);
   color: #fff;
   padding: 2.5em 0 !important;
+  
 }
 .sign_up_header{
   color: #fff;
@@ -841,6 +842,8 @@ hr{
   font-weight: 500; 
   text-decoration: none;
   color: #000;
+  display: inline-block;
+  
 }
 
 .logIn_btn > * {
@@ -848,7 +851,9 @@ hr{
   color: #fff;
 }
 
+dsjsd{
 
+}
 
 
 .sign_up_btn::before, .sign_up_btn::after{
@@ -2922,6 +2927,10 @@ dfjdkjjsd{
   
   .sign_up_btn{
     margin-top: 0;
+  }
+
+  .sidebar{
+
   }
   .sm_row{
     width: 100%;
