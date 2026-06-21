@@ -23,6 +23,7 @@ const Footer = ({onVisible}) => {
                         <Column >
                             <h5 className="footer_col_header">Navigations</h5>
                             <FooterLinks />
+                            
                         </Column>
                     
                         <Column>

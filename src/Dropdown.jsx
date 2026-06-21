@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Dropdown = ({query, dropdownContents, children, onHandleChange, visible, onVisible}) => {
+const Dropdown = ({query, dropdownContents, children, onHandleChange, visible , onVisible}) => {
     const [isVisible, setIsVisible]  = useState(false);
     
     return(
@@ -9,8 +9,9 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange, visible, o
                 {children}
                 <input type="text" className="dropdown_input"
                     value={query} 
-                    onClick={onVisible}
-                    onChange={ e => onHandleChange(e)}
+                    //onClick={onVisible}
+                    onMouseOver={onVisible}
+                    onChange={e => onHandleChange(e)}
                     placeholder="Select..."
                 />   
             </label>

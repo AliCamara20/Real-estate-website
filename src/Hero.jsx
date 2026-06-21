@@ -26,14 +26,12 @@ const Hero = () => {
     setIsVisible( isVisible === id ? 0 : id)
    }
     return(
-        <section className="hero"  >
+        <section className="hero"  > 
             <div className="hero_text">
                 <div className="container">
                     <h1 className="hero_title">
                         Find Accessible Homes for Rent
                     </h1>
-                   
-
                     
                     <form action="" className="hero_form row" onSubmit={e => e.preventDefault()}>
                         <div className="dropdown_inputFields row">
@@ -44,7 +42,7 @@ const Hero = () => {
                                 <Dropdown
                                     query={queries.propertiesQuery}   
                                     dropdownContents={ DropdownContent(propertiesResults, query => setQueries({...queries, propertiesQuery: query}))}
-                                    onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value  })}  
+                                    onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value })}  
                                     visible={isVisible === 1}
                                     onVisible={() => handleDropdown(1)}
                                 >

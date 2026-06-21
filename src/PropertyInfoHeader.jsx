@@ -4,7 +4,7 @@ const orders = ['Latest', 'Oldest', 'Title Ascending',
 const PropertyHeader = () => {
     return(
         <div className="p_header row" style={{width: '100%'}}>
-            <h2 className="num_of_results">Showing 1 of 1 Results</h2>
+            <h2 className="num_of_results">Showing 2 of 2 Results</h2>
             <div className="property_info_header_right_col row">
                 <div className="sort_panel">
                     <SortPanel>
