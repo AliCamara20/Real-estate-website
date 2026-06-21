@@ -978,7 +978,6 @@ footer{
 .modal_box{
   background-color: #fff;
   border-radius: .3em;
-  animation: slideIn 1s ease;
   position: relative;
   width: 100%;
   padding: 1.5em; 
@@ -986,6 +985,20 @@ footer{
  
 }
 
+.login_box{
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  0%{
+    margin-top: -100%;
+
+  }
+
+  100%{
+    margin-top: 0;
+  }
+}
 
 .modal{
   width: 90%;
@@ -1138,7 +1151,7 @@ dfjdkjjsd{
   align-items: center;
   color: #fff;
   cursor: pointer;
-  margin: .8em auto 1em auto;
+  margin: 0em auto .5em auto;
 }
 
 .modal_container::-webkit-scrollbar{

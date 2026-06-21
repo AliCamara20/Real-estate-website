@@ -4,21 +4,22 @@ import ErrorPage from './ErrorPage';
 import CustomCarousel from './Carousel';
 import PlaceInfo from './PlaceInfo';
 import {useState } from 'react';
+import useScrollToTop from './ScrollToTop';
 const Place = () => {
    const {placeId}  = useParams();
    const [places, setPlaces] = useState(initialPlaces);
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('');
-
-
+    
+    useScrollToTop();
+   
    if(placeId > places.length) return <ErrorPage />
    
    const selectedPlace = places.find( place => place.id === Number(placeId));
 
     function handleSubmitForm(e, propId) {
       e.preventDefault();
-      console.log('working');
       places.map( place => {
         if(place.id === propId ){
           return{
