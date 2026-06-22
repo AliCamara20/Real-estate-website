@@ -30,7 +30,7 @@ const Blog = ()=> {
                         <div className="selected_blog_info">
                             <img src={selectedBlog.blog_img} alt="" className="selected_blog_img" />
                             <div className="blog_writer__blog_comments">
-                                <p className="blog_writer">by Rosaline Doe</p>
+                                <p className="blog_writer">{selectedBlog.commentor}</p>
                                 <p className="blog_comments">{selectedBlog.comments} Comments</p>
                             </div>
                             <h2 className="blog_title">{selectedBlog.title}</h2>

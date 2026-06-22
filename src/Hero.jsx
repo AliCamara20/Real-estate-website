@@ -17,16 +17,17 @@ const Hero = () => {
     const [properties, setProperties] = useState(typeOfProperty)
     const [locations, setLocations] = useState(propertyLocations);
     const [queries, setQueries] = useState(initialQueries);
+    const[isVisible, setIsVisible] = useState(0);
+    const[price, setPrice] = useState(0);
     const propertiesResults = filterItems(properties, queries.propertiesQuery);
     const locationsResults = filterItems(locations, queries.locationsQuery);
-    const[isVisible, setIsVisible] = useState(0);
 
     
    function handleDropdown(id){
     setIsVisible( isVisible === id ? 0 : id)
    }
     return(
-        <section className="hero"  > 
+        <section className="hero"  onClick={() => setIsVisible(0)}> 
             <div className="hero_text">
                 <div className="container">
                     <h1 className="hero_title">
@@ -45,6 +46,7 @@ const Hero = () => {
                                     onHandleChange={ e => setQueries({...queries, propertiesQuery: e.target.value })}  
                                     visible={isVisible === 1}
                                     onVisible={() => handleDropdown(1)}
+                                    type={'text'}
                                 >
                                     <FontAwesomeIcon icon="fa-solid fa-briefcase" size="xl" className="form_icon" />
                                 </Dropdown>
@@ -55,8 +57,19 @@ const Hero = () => {
                                 onHandleChange={ e => setQueries({...queries, locationsQuery: e.target.value  })}
                                 visible={isVisible === 2}
                                 onVisible={() => handleDropdown(2)}
+                                type={'text'}
                             >
                                 <FontAwesomeIcon icon="fa-solid fa-location-dot" size="xl" className="form_icon" />
+                            </Dropdown>
+                            <Dropdown
+                                query={price}   
+                                dropdownContents={ DropdownContent(locationsResults,  query => setQueries({...queries, locationsQuery: query})) }
+                                onHandleChange={ e => setPrice(e.target.value)}
+                                //visible={isVisible === 3}
+                                onVisible={() => handleDropdown(3)}
+                                type={'number'}
+                            >
+                                <FontAwesomeIcon icon="fa-solid fa-dollar-sign" size="xl" className="form_icon" />
                             </Dropdown>
                         </div>  
                         <button className="hero_search_btn">Search</button>

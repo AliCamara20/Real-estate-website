@@ -9,22 +9,25 @@ import useScrollToTop from "./ScrollToTop";
 const Layout  = () => { 
     const [show, setShow] = useState(false);
     const[isVisible, setIsVisible] = useState(false);
-    const[darkmode, setDarkmode] = useState(false);
-    let l_className = 'layout';
-    if(darkmode) l_className  = 'layout_darkmode'
-    function handleDarkmode(){
-        setDarkmode(!darkmode)
-        console.log(`darkmode: ${darkmode}`);
+    const [showError, setShowError] = useState(false);    
+    
+    async function handleErrorMessage(){
+        setShowError(true);
+        
     }
     
+    
     return(
-        <section className={l_className}>
+        <section>
         <Navbar 
             onShow={() => setShow(true)} 
             isVisible={isVisible} 
             onVisible={(state) => setIsVisible(state)} 
         />    
-        {show && <LogInPage hideshow={() => setShow(false)} />}
+        {show && <LogInPage 
+            hideshow={() => setShow(false)} 
+            erroMessage={showError} 
+            handleErrorMessage={handleErrorMessage} />}
         <Outlet /> 
         <AI_Agent />
         <SignUp />

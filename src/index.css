@@ -1053,9 +1053,7 @@ footer{
 }
 
 
-dfjdkjjsd{
 
-}
 
 
 
@@ -1130,12 +1128,17 @@ dfjdkjjsd{
   font-family: var(--header-font);
 }
 
-.logIn_link{
+.logIn_link, .error{
   color: red;
+  font-family: var(--header-font);
 }
 .no_account{
   color: #0f75e2;
   margin-top: 1.3em;
+}
+
+.error{
+  font-size: 1.1rem;
 }
 
 .modal_closeBtn{
