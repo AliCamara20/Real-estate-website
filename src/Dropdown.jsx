@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Dropdown = ({query, dropdownContents, children, onHandleChange, visible , onVisible, type}) => {
+const Dropdown = ({query, dropdownContents, children, onHandleChange, visible , onVisible, placeholder, type}) => {
     const [isVisible, setIsVisible]  = useState(false);
     
     return(
@@ -12,8 +12,10 @@ const Dropdown = ({query, dropdownContents, children, onHandleChange, visible , 
                     //onClick={onVisible}
                     onMouseOver={onVisible}
                     onChange={e => onHandleChange(e)}
-                    placeholder="Select..."
-                    min={0}
+                    placeholder={placeholder}
+                    min={5000}
+                    step={1000}
+                    
                 />   
             </label>
             { visible  && <div className="dropdown_content">{dropdownContents ? dropdownContents : (<span>No option</span>) }</div>}

@@ -21,7 +21,7 @@ const Hero = () => {
     const[price, setPrice] = useState(0);
     const propertiesResults = filterItems(properties, queries.propertiesQuery);
     const locationsResults = filterItems(locations, queries.locationsQuery);
-
+    
     
    function handleDropdown(id){
     setIsVisible( isVisible === id ? 0 : id)
@@ -47,6 +47,7 @@ const Hero = () => {
                                     visible={isVisible === 1}
                                     onVisible={() => handleDropdown(1)}
                                     type={'text'}
+                                    placeholder={'Property type'}
                                 >
                                     <FontAwesomeIcon icon="fa-solid fa-briefcase" size="xl" className="form_icon" />
                                 </Dropdown>
@@ -58,6 +59,8 @@ const Hero = () => {
                                 visible={isVisible === 2}
                                 onVisible={() => handleDropdown(2)}
                                 type={'text'}
+                                placeholder={'location'}
+                                
                             >
                                 <FontAwesomeIcon icon="fa-solid fa-location-dot" size="xl" className="form_icon" />
                             </Dropdown>
@@ -68,6 +71,9 @@ const Hero = () => {
                                 //visible={isVisible === 3}
                                 onVisible={() => handleDropdown(3)}
                                 type={'number'}
+                                
+                                
+                                
                             >
                                 <FontAwesomeIcon icon="fa-solid fa-dollar-sign" size="xl" className="form_icon" />
                             </Dropdown>
