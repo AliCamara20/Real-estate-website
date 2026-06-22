@@ -12,20 +12,9 @@ const Navbar = ({onShow, isVisible, onVisible}) => {
     if(isVisible === true) navClassName = 'navbar nav-visible';
 
 
-    const layoutRef = useRef(null)
-    /*
-    useEffect(() => {
-        layoutRef.current.nextElementSibling.scrollIntoView({
-            behavior: 'smooth', 
-            block: 'nearest',
-            inline: 'center'
-        })
-            
-    }, [isVisible]); */
-
     return(
         
-        <header  ref={layoutRef} >
+        <header   >
             <div className="container row">
                 
                 <div className="nav_list sm_row">

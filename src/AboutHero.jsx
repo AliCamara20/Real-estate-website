@@ -3,7 +3,7 @@ const AboutHero = () => {
     return(
         <section className="about_hero section">
             <div className="container row">
-                <img  src={hero} alt="" className="about_hero-img" />
+                <img  src={hero} alt="" className="about_hero-img skeleton" />
                 <div className="about_hero-text">
                     <h2 className="about_hero-text__header">Our Story</h2>
                     <div className="about_hero-text__details">

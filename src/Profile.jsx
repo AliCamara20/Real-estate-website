@@ -2,7 +2,7 @@ import  user from './assets/user.jpg'
 const Profile = () => {
     return(
         <div className="profile right_col__col_header">
-            <img src={user} alt="" className="profile_img" />
+            <img src={user} alt="" className="profile_img skeleton" />
             <h2 className="username">User Profile</h2>
         </div>
     )

@@ -49,7 +49,7 @@ const Achievements = () => {
 const Column = ({colImg, numOfAchievements, detail}) => {
     return(
         <div className="col">
-            <img src={colImg} alt="" className="col_img" />
+            <img src={colImg} alt="" className="col_img skeleton" />
             <h2 className="col_num">{numOfAchievements}</h2>
             <p className="col_detail">{detail}</p>
         </div>

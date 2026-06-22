@@ -12,7 +12,7 @@ const Blog = ()=> {
     const[blogs, setBlogs] = useState(blogData);
     const {blogId} = useParams();
     const selectedBlog = blogs.find( blog => blog.id === Number(blogId));
-     useScrollToTop();
+    useScrollToTop();
     return(
 
         <section className="selected_blog_section property_list">
@@ -28,7 +28,7 @@ const Blog = ()=> {
                 <div className="selected_blog_detail place_info_container">
                     <div className="selected_blog">
                         <div className="selected_blog_info">
-                            <img src={selectedBlog.blog_img} alt="" className="selected_blog_img" />
+                            <img src={selectedBlog.blog_img} alt="" className="selected_blog_img skeleton" />
                             <div className="blog_writer__blog_comments">
                                 <p className="blog_writer">{selectedBlog.commentor}</p>
                                 <p className="blog_comments">{selectedBlog.comments} Comments</p>
@@ -74,7 +74,7 @@ const Blog = ()=> {
 
 const SocialShare = () => {
     return(
-        <div className="blog_social_share">
+        <div className="blog_social_share blogger_socail_share">
             <FontAwesomeIcon icon="fa-brands fa-facebook-f" size='xm'   />
             <FontAwesomeIcon icon="fa-brands fa-x-twitter" size='xm' />
             <FontAwesomeIcon icon="fa-brands fa-linkedin-in" size='xm' />

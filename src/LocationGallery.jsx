@@ -19,12 +19,12 @@ const LocationGallery = () => {
 
                     </p>
                     <div className="cards location_cards">
-                        <Card cardImg={sf_img_img} l_name={'San Francisco, California'} properties={'1 property'} />
+                        <Card cardImg={sf_img_img} l_name={'San Francisco, California'} properties={'2 property'} />
                         <Card cardImg={dunao_img} l_name={'Dunao, California'} properties={'2 properties'} />
-                        <Card cardImg={lp_img} l_name={'Liverpoool, California'} properties={'1 property'}/>
-                        <Card cardImg={newO_img} l_name={'New Orleans, Louisiana'} properties={'1 property'}/>
-                        <Card cardImg={queens_img} l_name={'Queens, New York'} properties={'1 property'}/>
-                        <Card cardImg={bk_img} l_name={'Brooklyn, New York'} properties={'3 properties'}/>
+                        <Card cardImg={lp_img} l_name={'Liverpoool, California'} properties={'2 property'}/>
+                        <Card cardImg={newO_img} l_name={'New Orleans, Louisiana'} properties={'2 property'}/>
+                        <Card cardImg={queens_img} l_name={'Queens, New York'} properties={'2 property'}/>
+                        <Card cardImg={bk_img} l_name={'Brooklyn, New York'} properties={'2 properties'}/>
                     </div>   
                     <CallToActionButton label = {'Explore More Location'} />
                 </div>
@@ -40,7 +40,7 @@ const Card = ({cardImg, l_name, properties}) => {
     return(
         <div className="location_card" >
             <Link to={`properties/${l_name}`}>
-                <img src={cardImg} alt="" className="location_card_img" />
+                <img src={cardImg} alt="" className="location_card_img skeleton" />
             </Link>
            
             <div className="location_card_desc  row_section">

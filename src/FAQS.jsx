@@ -8,13 +8,13 @@ import FAQsPanels from './FAQPanel'
 import useScrollToTop from './ScrollToTop'
 const FaQS = () => {
     
-    const [selectedFaqsType, setSelectedFaqsType] = useState('general');
+    const [selectedFaqsType, setSelectedFaqsType] = useState('search');
     const selectedFaqs = faqs.find( faq => faq.type === selectedFaqsType)
 
     useScrollToTop();
     return(
         <section className="faqs">
-            <div className="faqs_hero">
+            <div className="faqs_hero skeleton">
                 <div className="container_container">
                     <div className="container">
                         <div className="faqs_hero_text">

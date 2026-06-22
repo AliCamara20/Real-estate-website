@@ -8,7 +8,7 @@ const MissionStatement = () => {
             <p className="mission_info">Professional & Dedicated Team</p>
             <div className="container row">
                 <WorkProcesses />
-                <img  src={hero} alt="" className="about_hero-img mission_statement__img" />
+                <img  src={hero} alt="" className="about_hero-img mission_statement__img skeleton" />
 
             </div>
         </section>

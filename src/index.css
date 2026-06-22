@@ -32,6 +32,17 @@ button, input, a, p{
 button{
   cursor: pointer;
 }
+.skeleton{
+   animation: skeleton 1.2s linear infinite alternate;
+}
+@keyframes skeleton {
+  0%{
+     background-color: rgb(255, 255, 255, .3);
+  }
+  100%{
+    background-color: rgb(255, 255, 255, .6);
+  }
+}
 
 .section{
   padding: 4em 0;

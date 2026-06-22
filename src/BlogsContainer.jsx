@@ -28,7 +28,7 @@ const Blog = ({blog}) => {
     return(
         <div className="blog_card">
             <Link to={`${blog.id}`} className="blog_img_link">
-                <img src={blog.blog_img} alt="" className="blog_img" />
+                <img src={blog.blog_img} alt="" className="blog_img skeleton" />
             </Link>
             <div className="blog_desc">   
                 <p className="published_date">{blog.published_at}</p>

@@ -19,7 +19,7 @@ const BlogPosts = () => {
 const Post = ({post}) => {
     return(
         <div className="blog_post">
-            <img src={post.blog_img} alt="" className="post_img" />
+            <img src={post.blog_img} alt="" className="post_img skeleton" />
             <div className="post_desc">
                 <p className="post_title">{post.title}</p>
                 <p className=" posted_date">

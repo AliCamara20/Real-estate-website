@@ -60,7 +60,7 @@ const ReviewCard = forwardRef(
     
         return(
             <div className="review_card"  ref={ref} >
-                <img src={props.review.img} alt="" className="review_img" />
+                <img src={props.review.img} alt="" className="review_img skeleton" />
                 <div className="rev_info">
                     <div className="stars">
                         {Array.from('Stars').map( star => <Star  key={star}/>)}

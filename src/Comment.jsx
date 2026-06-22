@@ -1,7 +1,7 @@
-const BlogComment = ({comment_img, comment_name, comment_date, children}) => {
+const BlogComment = ({comment_img, comment_name, comment_date, comment_comment, children}) => {
     return(
         <div className="selected_blog_comment">
-            <img src={comment_img} alt="" className="selected_blog_commment_img" />
+            <img src={comment_img} alt="" className="selected_blog_commment_img skeleton" />
             <div className="comment_info">
                 <div className="blog_comment_header">
                 <h3 className="comment_name blogger_name">{comment_name} 
@@ -12,10 +12,7 @@ const BlogComment = ({comment_img, comment_name, comment_date, children}) => {
                 
                 <p className="comment_date">{comment_date}</p> 
                 <p className="blog_detail comment_detail">
-                    Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim 
-                    laborumab.perspiciatis unde omnis iste natus 
-                    erro
+                    {comment_comment}
                 </p>
             </div>
         </div>

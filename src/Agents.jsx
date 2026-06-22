@@ -10,32 +10,13 @@ import niha from './assets/niharika_muthurk.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
-import React, { forwardRef, useRef, useLayoutEffect } from "react"
 const Agents = () => {
-    const containerRef = useRef(null);
-    const intervalRef = useRef(null);
-
-    useLayoutEffect(() => {
-       
-        intervalRef.current =  setInterval(() => {
-            // containerRef.current.scrollLeft  = (containerRef.current.scrollLeft + (containerRef.current.scrollWidth / 2)) % (containerRef.current.scrollWidth)
-            //setActiveIndex( index =>  (index + 1) % 4);  
-
-                 
-        }, 4000)
-
-            
-
-
-        return () => clearInterval(intervalRef.current);
-
-     }, [])
     return(
         <section className="section agents">
             <div className="container">
                 <h2 className="section_header ">Meet Our Team</h2>
                 <p className="mission_info agents_section_info">Professional & Dedicated Team</p>
-                <Container  ref={containerRef}/>
+                <Container />
                 
             </div>
             
@@ -45,11 +26,10 @@ const Agents = () => {
 }
 
 
-const Container = forwardRef(
-    (props, ref) => {
+const Container = () => {
     
         return(
-                <div className="agents_container" ref={ref} {...props}> 
+                <div className="agents_container" > 
                     <div className="agents_grid">
                     <Agent name={'Adam Walcorn'} image={adam} />
                     <Agent name={'Seema Gauranki'} image={seema} />
@@ -69,7 +49,7 @@ const Container = forwardRef(
             
         )
     }
-) 
+
 
     
 
@@ -79,7 +59,7 @@ const Agent = ({name, image}) => {
     return(
        
         <div className="agent_card">
-            <img src={image} alt="" className="agent_img" />
+            <img src={image} alt="" className="agent_img skeleton" />
             <h3 className="agent_name">{name}</h3>
             <p className="agent_occupation">Agent</p>
             <SocialMediaLinks />

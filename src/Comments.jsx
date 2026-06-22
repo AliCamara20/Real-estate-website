@@ -14,14 +14,32 @@ import BlogComment from './Comment';
 const Comments = () => {
    return(
     <div className="selected_blog__comments">
-        <h2 className="num_of_comments">05 Comments</h2>
+        <h2 className="num_of_comments">04 Comments</h2>
         <div className="selected_blog_comments__comments">
-            <BlogComment comment_img={james} comment_name={'Roselina William'} comment_date={'12th March 2024'} >
+            <BlogComment 
+                comment_img={james} 
+                comment_name={'Roselina William'} 
+                comment_date={'12th March 2024'} 
+                comment_comment={'Very informative and easy to understand. I appreciate the practical tips and expert advice included in this post.'}
+            >
               <FontAwesomeIcon icon="fa-solid fa-bookmark" size='xs' className="bookmark_icon" />
             </BlogComment>
-            <BlogComment comment_img={grag} comment_name={'Grack Rockefeller'} comment_date={'24th April 2024'} />
-            <BlogComment comment_img={adam} comment_name={'Adam Munir'} comment_date={'13th May 2024'} />
-            <BlogComment comment_img={jasmine} comment_name={'Rita Khatri'} comment_date={'23th May 2024'} />
+            <BlogComment comment_img={grag} 
+                comment_name={'Grack Rockefeller'} 
+                comment_date={'24th April 2024'}
+                comment_comment={'Great insights! This article provides valuable information for anyone interested in the real estate market. Thanks for sharing.'} 
+            />
+            <BlogComment comment_img={adam} 
+                comment_name={'Adam Munir'} 
+                comment_date={'13th May 2024'} 
+                comment_comment={'Excellent content! This blog answered several questions I had and gave me a better understanding of the topic.'}
+            />
+            <BlogComment 
+                comment_img={jasmine} 
+                comment_name={'Rita Khatri'} 
+                comment_date={'23th May 2024'} 
+                comment_comment={'Thank you for sharing this helpful information. The points discussed here are relevant and useful for both buyers and investors.'}
+            />
         </div>
         <div className="comments_form">
         <h2 className="comment_form_header">Post Comments</h2>
@@ -49,15 +67,13 @@ const Comments = () => {
 export const Bloggger = () => {
     return(
         <div className="selected_blog__blogger">
-            <img src={james} alt="" className="selected_blog__blogger_img" />
+            <img src={james} alt="" className="selected_blog__blogger_img skeleton" />
             <h3 className="blogger_name">James Williams</h3>
             <SocialShare />
             <p className="blog_detail blogger_detail">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea 
-            commodo.
+                A passionate real estate professional with extensive knowledge of property markets, 
+                investment opportunities, and housing trends. Dedicated to helping buyers, sellers, 
+                and investors make informed decisions through insightful articles and expert guidance.
             </p>
         </div>
     )

@@ -6,13 +6,12 @@ const ContactInfo = () => {
         <div className="contact_info">
             <h2 className="contact_info_header">Get In Touch</h2>
             <p className="contact_info_details">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua.
+                Get in touch with us for expert real estate assistance. 
+                We're here to help you buy, sell, rent, or invest with confidence.
             </p>
 
             <div className="contact_info__info">
-                <img src={homeIcon} alt="" className="contact_info_img" />
+                <img src={homeIcon} alt="" className="contact_info_img skeleton" />
                 <div>
                     <h4 className="contact_info__info_header">Reach Us</h4>
                     <p className="contact_info__info_detail">
@@ -24,7 +23,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="contact_info__info">
-                <img src={mailIcon} alt="" className="contact_info_img" />
+                <img src={mailIcon} alt="" className="contact_info_img skeleton" />
                 <div>
                     <h4 className="contact_info__info_header">Drop A Mail</h4>
                     <p className="contact_info__info_detail">support@Rikada.com Rikada@gmail.com</p>
@@ -33,7 +32,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="contact_info__info">
-                <img src={phoneIcon} alt="" className="contact_info_img" />
+                <img src={phoneIcon} alt="" className="contact_info_img skeleton" />
                 <div>
                     <h4 className="contact_info__info_header">Call Us</h4>
                     <p className="contact_info__info_detail">

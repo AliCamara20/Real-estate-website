@@ -1,6 +1,6 @@
 const CardHeader = ({property}) => {
     let propClassName = 'property_status';
-    if(property.category.toLowerCase() === 'rent') propClassName += ' property_status_rent'
+    if(property.category === 'Rent') propClassName += ' property_status_rent'
     return(
         <div className="top_section row_section">
             <div className="left">

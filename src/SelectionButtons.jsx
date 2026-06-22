@@ -2,7 +2,7 @@ import { useState } from "react"
 import FAQsButton from "./SelectionButton"
 
 const FAQsButtons = ({faqs, onSelect}) => {
-    const [faqsType, setFaqsType] = useState('general');
+    const [faqsType, setFaqsType] = useState('search');
     return(
         <div className="faq_btns">
             {faqs.map( faq => 

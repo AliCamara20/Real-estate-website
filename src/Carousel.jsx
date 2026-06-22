@@ -28,7 +28,7 @@ const CustomCarousel = ({images}) => {
    return(
     <Carousel responsive={responsive}
     >
-        {images.map( c => <img key={c} src={c} />)}
+        {images.map( c => <img key={c} src={c} className='skeleton' />)}
     </Carousel>
    )
 }

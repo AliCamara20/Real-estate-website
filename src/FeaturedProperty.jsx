@@ -36,10 +36,8 @@ const Featuredplaces = () => {
 
 const FeaturedProperty = ({f_img, p_name, prop_status}) => {
     let btnClassName = 'featured_prop_status'
-    if(prop_status.toLowerCase() === 'buy') {
-        btnClassName = "featured_prop_status property_status_sale"
-        console.log(prop_status)
-    }
+    if(prop_status.toLowerCase() === 'buy') btnClassName = "featured_prop_status property_status_sale"
+    
     return(
         <div className="featured">
             <img src={f_img} alt="" className="featured_prop_img" />

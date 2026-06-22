@@ -56,14 +56,13 @@ export const Card = ({children, cardImages}) => {
     return(
         <div className="card">
             <div className="stacked">
-                <img src={currentImage} alt="" className="card_img" />
+                <img src={currentImage} alt="" className="card_img " />
                 <div className="btns row_section" >
                     <button className='btn left_btn' onClick={ () => setIndex( index => index  - 1) }>
-                        <img src={leftArrow} alt="" className="btn_arrow" />
+                        <img src={leftArrow} alt="" className="btn_arrow " />
                     </button>
                     <button className='btn right_btn' onClick={ () => setIndex( index => index  + 1) }>
-                    <img src={rightArrow} alt="" className="btn_arrow" />
-
+                        <img src={rightArrow} alt="" className="btn_arrow " />
                     </button>
                     
                 </div>

@@ -376,30 +376,30 @@ export const tags  = ['Apartment', 'Confy', 'Couple', 'Family',
 
  export const faqs = [
     {
-        type: 'general',
+        type: 'search',
         questions: [
-            {id: 0, quest: 'How To Install Rikanda Theme', ans: 'Installing the Rikanda Theme is quick and easy. Simply upload the theme files to your website, activate the theme, and follow the setup wizard to configure the basic settings. You can then customize the design and content to match your real estate business.'},
-            {id: 1, quest: 'What is main Requirement For Rikanda', ans: 'Rikanda requires a compatible and up-to-date WordPress installation, along with the recommended plugins and hosting environment, to ensure optimal performance and access to all theme features.'},
-            {id: 2, quest: 'Why Choose Rikanda Theme', ans: 'Rikanda is designed specifically for real estate websites, offering a modern design, user-friendly customization options, responsive layouts, and powerful property listing features to help you create a professional online presence with ease.'}
+            {id: 0, quest: 'How can I search for properties?', ans: 'Our advanced search tool allows you to filter properties by location, price range, property type, size, and other preferences. This helps you quickly find listings that match your needs.'},
+            {id: 1, quest: 'Can I save my property searches?', ans: 'Yes, registered users can save their searches and access them later. This makes it easier to track properties and stay updated on new listings.'},
+            {id: 2, quest: 'Can I view a property before contacting my agent?', ans: 'Yes, users can view property images, descriptions, prices, and locations before making an enquiry.'}
         ]
 
     },
     {
-        type: 'payment',
+        type: 'transactions',
         questions: [ 
-            {id: 0, quest: 'May I Request For Refund', ans: 'Yes, refund requests are accepted according to our refund policy. If you are not satisfied with your purchase, please contact our support team within the eligible refund period for assistance'},
-            {id: 1, quest: 'May I Get Any Offer in Future', ans: 'Yes, we occasionally run special promotions, discounts, and exclusive offers for our customers. Subscribe to our newsletter or follow our updates to stay informed about upcoming deals.'},
-            {id: 2, quest: 'How Much Time It will Take For Refund', ans: 'Refunds are typically processed within a few business days after approval. The exact time may vary depending on your payment provider and banking institution.'}
+            {id: 0, quest: 'How do I make an offer on a property?', ans: 'You can contact the agent directly through the property listing page. They will guide you through the offer process and answer any questions you may have.'},
+            {id: 1, quest: 'Are there any additional fees during a transaction?', ans: 'Depending on the transaction, additional costs such as legal fees, taxes, and registration charges may apply. Your agent will provide a clear breakdown of all applicable fees.'},
+            {id: 2, quest: 'How long does the buying process take?', ans: 'The timeline varies based on the property and required documentation. In most cases, transactions are completed within a few weeks to a few months.'}
         ]
 
     },
 
     {
-        type: 'upgrade',
+        type: 'Listing',
         questions: [
-            {id: 0, quest: 'How To Upgrade Rikanda Theme', ans: 'Upgrading Rikanda is simple. Download the latest version of the theme, upload it through your WordPress dashboard, and activate the update. We recommend backing up your website before performing any upgrade.'},
-            {id: 1, quest: 'Is Rikanda Available for WordPress Version', ans: 'Yes, Rikanda is fully compatible with WordPress and is designed to work seamlessly with the latest versions of the platform, providing an easy and flexible website-building experience.'},
-            {id: 2, quest: 'Why Do We need to upgrade Rikanda', ans: 'Upgrading Rikanda ensures you get the latest features, performance improvements, bug fixes, and security updates, helping your website stay fast, secure, and fully compatible with the latest WordPress version.'}
+            {id: 0, quest: 'How can I list my property?', ans: 'Create an account and submit your property details, including photos and pricing information. Once approved, your property will be published on our platform.'},
+            {id: 1, quest: 'Is there a fee to list a property?', ans: 'We offer different listing packages to suit various needs and budgets. Contact our team for detailed pricing and package information.'},
+            {id: 2, quest: 'Can I edit my property listing after publishing?', ans: 'Yes, you can update property details, images, pricing, and descriptions at any time. Changes can be managed easily through your account dashboard.'}
         ]
 
     }

@@ -36,7 +36,7 @@ const Card = ({label, icon, step, children}) => {
     return(
         <div className="procedural_card">
             <h3 className="step">{step}</h3>
-            <img src={icon} alt="" className="proc_img" />
+            <img src={icon} alt="" className="proc_img skeleton" />
             <h3 className="proc_title">{label}</h3>
             <p className="proc_detail col_detail">
                 {children}
