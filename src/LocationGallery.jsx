@@ -19,11 +19,11 @@ const LocationGallery = () => {
 
                     </p>
                     <div className="cards location_cards">
-                        <Card cardImg={sf_img_img} l_name={'San Francisco, California'} properties={'2 property'} />
+                        <Card cardImg={sf_img_img} l_name={'San Francisco, California'} properties={'2 properties'} />
                         <Card cardImg={dunao_img} l_name={'Dunao, California'} properties={'2 properties'} />
-                        <Card cardImg={lp_img} l_name={'Liverpoool, California'} properties={'2 property'}/>
-                        <Card cardImg={newO_img} l_name={'New Orleans, Louisiana'} properties={'2 property'}/>
-                        <Card cardImg={queens_img} l_name={'Queens, New York'} properties={'2 property'}/>
+                        <Card cardImg={lp_img} l_name={'Liverpoool, California'} properties={'2 properties'}/>
+                        <Card cardImg={newO_img} l_name={'New Orleans, Louisiana'} properties={'2 properties'}/>
+                        <Card cardImg={queens_img} l_name={'Queens, New York'} properties={'2 properties'}/>
                         <Card cardImg={bk_img} l_name={'Brooklyn, New York'} properties={'2 properties'}/>
                     </div>   
                     <CallToActionButton label = {'Explore More Location'} />
