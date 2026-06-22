@@ -181,12 +181,18 @@ header{
 }
 
 .property{
-  margin-top: 2em ;
-  background-color: rgb(149, 218, 180);
+  background-color: cornflowerblue !important;
+  margin-right: 1em !important;
+  padding: auto 3em;
+  
+}
+.property:hover{
+  
 }
 
-.property .item_name{
-  color: cornflowerblue;
+.property > *{
+  text-decoration: none;
+  color: #000;
 }
 
 
