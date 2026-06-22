@@ -18,7 +18,7 @@ const Achievements = () => {
                 <div className="columns row">
                     <Column colImg={completedProperty} 
                         numOfAchievements={'20500+'}
-                        detail={'Completed Property'}
+                        detail={'Completed Properties'}
                     >
                     </Column>
 
@@ -30,7 +30,7 @@ const Achievements = () => {
 
                     <Column colImg={rented_appartments} 
                         numOfAchievements={'12300+'}
-                        detail={'Apartment Rent'}
+                        detail={'Apartment Rents'}
                     >
                     </Column>
 
