@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="hero_text">
                 <div className="container">
                     <h1 className="hero_title">
-                        Find Accessible Homes for Rent
+                        Find Accessible Homes
                     </h1>
                     
                     <form action="" className="hero_form row" onSubmit={e => e.preventDefault()}>

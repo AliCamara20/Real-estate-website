@@ -26,10 +26,7 @@ const CustomCarousel = ({images}) => {
       
       
    return(
-    <Carousel responsive={responsive} 
-      
-        customButtonGroup={<ButtonGroup /> }
-        removeArrowOnDeviceType={["tablet", "mobile", 'desktop']}
+    <Carousel responsive={responsive}
     >
         {images.map( c => <img key={c} src={c} />)}
     </Carousel>
@@ -41,7 +38,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     return (
         <CarouselButtons
             onPrevious={() => previous()} 
-            onNext={() => next()}
+            onNext={() => next() }
         />
     );
 };
@@ -49,14 +46,14 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
 const CarouselButtons = ({onPrevious, onNext}) => {
     return(
         <div className="carousel-button-group"> 
-            <button className= 'carousel_btn one' onClick={onPrevious} >
+            <button className= 'carousel_btn one' onClick={onPrevious}  >
                 <svg width="25px" height="25px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#0f75e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#0f75e2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </button>
             <button className= 'carousel_btn two'  onClick={onNext} >
                 <svg width="25px" height="25px" viewBox="0 0 24 24" fill="#0f75e2" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#0f75e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#0f75e2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </button>
 

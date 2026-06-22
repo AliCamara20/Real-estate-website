@@ -194,11 +194,11 @@ header{
 
 .property > *{
   text-decoration: none;
-  color: #000;
+  color: var(--primary-color);
   
 }
 .property:hover{
-  background-color: rgb(0, 0, 255, .3);
+  background-color: #325ed8;
   
 }
 .property:hover > *{
@@ -210,7 +210,7 @@ header{
 
 .logo_img_box{
   position: relative;
-  background-color: rgb(10, 88, 114);
+  background-color: rgb(10, 88, 114); 
   color: black;
   border: none;
   padding: .5em;
@@ -390,6 +390,15 @@ header{
 .col_detail{
   margin: .3rem;
   line-height: 1.5;
+}
+.property_status_rent{
+  background-color: rgb(217, 233, 227) !important;
+  color: mediumseagreen !important;
+}
+
+.property_status_sale{
+  background-color: rgb(253, 232, 225) !important;
+  color: orangered !important;
 }
 
 .col_num{
