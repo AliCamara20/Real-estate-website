@@ -11,10 +11,7 @@ const Layout  = () => {
     const[isVisible, setIsVisible] = useState(false);
     const [showError, setShowError] = useState(false);    
     
-    async function handleErrorMessage(){
-        setShowError(true);
-        
-    }
+  
     
     
     return(
@@ -24,10 +21,7 @@ const Layout  = () => {
             isVisible={isVisible} 
             onVisible={(state) => setIsVisible(state)} 
         />    
-        {show && <LogInPage 
-            hideshow={() => setShow(false)} 
-            erroMessage={showError} 
-            handleErrorMessage={handleErrorMessage} />}
+        {show && <LogInPage hideshow={() => setShow(false)}  />}
         <Outlet /> 
         <AI_Agent />
         <SignUp />

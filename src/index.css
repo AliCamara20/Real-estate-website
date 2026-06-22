@@ -145,7 +145,7 @@ header{
 
 
 .signIn{
-  background-color: #030357;
+  background-color: #2244a1;
   color: #fff;
   
 }
@@ -166,33 +166,39 @@ header{
 .property, .signIn{
   margin-left: 2em;
   display: flex;
-  border-bottom:0 ;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
   margin:  1em auto;
   width: 80%;
-  padding: .7em 1em;
-  border-radius: 4px;
+  padding: .5em 1em;
+  border-radius: 3px;
 
 
 
 }
 
 .property{
-  background-color: cornflowerblue !important;
+  border: 1px solid #2244a1 !important;
   margin-right: 1em !important;
-  padding: auto 3em;
+  transition: .5s ease;
   
 }
-.property:hover{
-  
-}
+
+
 
 .property > *{
   text-decoration: none;
   color: #000;
+  
+}
+.property:hover{
+  background-color: #2244a1;
+  
+}
+.property:hover > *{
+  color: #fff;
 }
 
 
