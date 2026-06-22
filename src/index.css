@@ -147,7 +147,11 @@ header{
 .signIn{
   background-color: #2244a1;
   color: #fff;
+  transition: all .5s linear ;
   
+}
+.signIn:hover{
+  background-color: #325ed8;
 }
 .signIn svg, .add_prop{
   fill: #fff;
@@ -194,7 +198,7 @@ header{
   
 }
 .property:hover{
-  background-color: #2244a1;
+  background-color: rgb(0, 0, 255, .3);
   
 }
 .property:hover > *{

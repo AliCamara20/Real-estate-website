@@ -1,11 +1,11 @@
-const CardHeader = ({name, price}) => {
+const CardHeader = ({property}) => {
     return(
         <div className="top_section row_section">
             <div className="left">
-                <p className="col_detail prop_status">Sale</p>
-                <h4 className="estate_name">{name}</h4>
+                <p className="col_detail prop_status">{property.category}</p>
+                <h4 className="estate_name">{property.name}</h4>
             </div>
-            <h3 className="prop_price">${price}</h3>                   
+            <h3 className="prop_price">${property.price}</h3>                   
         </div>
     )
     

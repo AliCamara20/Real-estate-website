@@ -105,6 +105,7 @@ export const places = [
             agent_support: 0
         }, 
         reviews: [],    
+        category: 'Sale'
     },
 
     {
@@ -136,7 +137,8 @@ export const places = [
             location: 0, 
             agent_support: 0
         }, 
-        reviews: [],    
+        reviews: [],   
+        category: 'Sale' 
     },
 
     {
@@ -168,7 +170,8 @@ export const places = [
             location: 0, 
             agent_support: 0
         }, 
-        reviews: [],    
+        reviews: [],   
+        category: 'Rent' 
     },
 
     {
@@ -200,7 +203,8 @@ export const places = [
             location: 0, 
             agent_support: 0
         }, 
-        reviews: [],    
+        reviews: [],  
+        category: 'Sale'  
     },
 
     
@@ -233,7 +237,8 @@ export const places = [
             location: 0, 
             agent_support: 0
         }, 
-        reviews: [],    
+        reviews: [],  
+        category: 'Rent'  
     },
 
     {
@@ -265,7 +270,8 @@ export const places = [
             location: 0, 
             agent_support: 0
         }, 
-        reviews: [],    
+        reviews: [],  
+        category: 'Sale'  
     },
 
 ]
